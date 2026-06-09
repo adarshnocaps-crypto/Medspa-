@@ -1,0 +1,78 @@
+.appointment-content-container {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6rem 4%;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.appointment-left {
+  flex: 1;
+  /* Override booking section internal margins if necessary */
+}
+
+.appointment-left .booking-section {
+  padding: 0;
+  background: transparent;
+}
+
+.appointment-right {
+  flex: 0 0 350px;
+  background-color: var(--body-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.appointment-info-list .info-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1.2rem;
+}
+
+.appointment-info-list .info-icon-wrapper {
+  margin-bottom: 0;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(88, 94, 72, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.appointment-info-list .info-title {
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.appointment-info-list .info-text {
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .appointment-content-container {
+    flex-direction: column;
+  }
+  .appointment-right {
+    flex: none;
+    width: 100%;
+  }
+}

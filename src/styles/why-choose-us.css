@@ -1,0 +1,184 @@
+/* ==========================================================================
+   WHY CHOOSE US SECTION
+   ========================================================================== */
+.why-choose-us-section {
+  background-color: var(--primary-color);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header Area */
+.wcu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.wcu-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--body-bg-color);
+  margin: 0;
+}
+
+.wcu-description {
+  max-width: 450px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.7);
+  text-align: right;
+  margin: 0;
+}
+
+/* Divider Line */
+.wcu-divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255,255,255,0.1);
+  margin-bottom: 4rem;
+}
+
+/* Content Area */
+.wcu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Navigation Buttons */
+.wcu-nav-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--body-bg-color);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.wcu-nav-btn:hover {
+  background-color: var(--body-bg-color);
+  color: var(--primary-color);
+  border-color: var(--body-bg-color);
+}
+
+/* Carousel Viewport */
+.wcu-carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+  padding: 0;
+  margin: 0 2rem;
+}
+
+/* Carousel Track */
+.wcu-carousel-track {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Feature Wrapper */
+.wcu-feature-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* Feature Item */
+.wcu-feature-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.wcu-icon-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.wcu-feature-title {
+  font-family: 'Melodrama', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--body-bg-color);
+  margin-bottom: 1.5rem;
+}
+
+.wcu-feature-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+  max-width: 300px;
+}
+
+/* Column Divider */
+.wcu-col-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  position: relative;
+  width: 40px;
+}
+
+.wcu-col-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 80px;
+  height: 1px;
+  background-color: rgba(255,255,255,0.1);
+  z-index: 1;
+}
+
+.plus-mark {
+  color: rgba(255,255,255,0.3);
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  padding: 0 10px;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .wcu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  .wcu-description {
+    text-align: left;
+  }
+  .wcu-carousel-viewport {
+    margin: 0;
+  }
+  .wcu-carousel-track {
+    flex-direction: column !important;
+    transform: none !important;
+    width: 100% !important;
+  }
+  .wcu-feature-wrapper {
+    width: 100% !important;
+    margin-bottom: 3rem;
+  }
+  .wcu-col-divider {
+    display: none;
+  }
+  .wcu-nav-btn {
+    display: none;
+  }
+}

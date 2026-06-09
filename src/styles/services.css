@@ -1,0 +1,574 @@
+/* ==========================================================================
+   SERVICES PAGE OVERHAUL STYLES
+   ========================================================================== */
+
+/* Hero Banner Overhaul */
+.services-hero-container {
+  position: relative;
+  width: 100%;
+  background-color: var(--body-bg-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.services-hero-banner {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5); /* darker for contrast */
+}
+
+.services-hero-title-centered {
+  position: relative;
+  z-index: 10;
+  font-family: 'Melodrama', serif;
+  font-size: 7rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: -50px; /* Pulls text down to overlap the light background */
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.services-hero-content-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+  background-color: var(--body-bg-color);
+}
+
+.services-hero-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.services-hero-desc {
+  max-width: 600px;
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Bento Grid Section */
+.services-bento-section {
+  background-color: var(--body-bg-color);
+  padding: 8rem 4%;
+}
+
+.services-bento-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.services-bento-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.services-bento-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.services-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bento-tab-btn {
+  background: transparent;
+  border: 1px solid rgba(88, 94, 72, 0.3);
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.bento-tab-btn:hover,
+.bento-tab-btn.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.services-cards-grid {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 2rem; /* Give room for shadow/scroll */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.services-cards-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.service-card {
+  flex: 0 0 calc(33.333% - 1.333rem); /* 3 cards visible at once */
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  cursor: pointer;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: var(--body-bg-color);
+  color: var(--primary-color);
+  border: 1px solid rgba(88, 94, 72, 0.2);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.carousel-nav-btn.left {
+  left: -25px;
+}
+
+.carousel-nav-btn.right {
+  right: -25px;
+}
+
+.service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.05);
+}
+
+.service-card-hover-content {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--body-bg-color); /* The light beige background from screenshot */
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hover-card-title {
+  font-family: 'Melodrama', serif;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hover-card-desc {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hover-card-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hover-card-bullets li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.bullet-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* Why Choose Us Section (Static 3 columns) */
+.services-wcu-section {
+  background-color: #f4f5f0;
+  padding: 8rem 4%;
+}
+
+.services-wcu-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.services-wcu-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.services-wcu-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.services-wcu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.services-wcu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.wcu-number-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.wcu-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(88, 94, 72, 0.2);
+}
+
+.wcu-number {
+  font-family: 'Melodrama', serif;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  padding: 0 1rem;
+}
+
+.wcu-item-title {
+  font-family: 'Melodrama', serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+
+.wcu-item-desc {
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Special Discounts Section */
+.special-discounts-section {
+  background-color: var(--body-bg-color);
+  padding: 8rem 4%;
+}
+
+.special-discounts-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.discounts-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.discounts-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.discounts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.discount-card {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Ensure absolute children position correctly */
+  overflow: hidden; /* Hide overflowing icon parts */
+}
+
+.discount-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.discount-bg-icon {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.outline-card {
+  border: 1px solid rgba(88, 94, 72, 0.2);
+}
+
+.discount-percent {
+  font-family: 'Melodrama', serif;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+  color: inherit; /* Fix inheritance from typography.css */
+}
+
+.discount-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.discount-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  color: inherit;
+}
+
+.discount-includes {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  flex-grow: 1;
+}
+
+.discount-includes li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  opacity: 0.9;
+}
+
+.inc-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+  margin-right: 10px;
+}
+
+.discount-btn {
+  background: transparent;
+  border: 1px solid;
+  padding: 0.8rem 2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  position: relative; /* For pseudo-elements */
+}
+
+/* Corner Cutout effect */
+.discount-btn::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-top: 10px solid currentColor;
+  border-right: 10px solid transparent;
+}
+
+.discount-btn:hover {
+  background-color: var(--btn-color) !important;
+  color: var(--btn-bg) !important;
+}
+
+.quote-bg-circle {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+.quote-icon-large {
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  font-size: 5rem;
+  font-family: 'Melodrama', serif;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
+  pointer-events: none;
+}
+
+.inc-custom-bullet {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Services Testimonial Section */
+.services-testimonial-section {
+  background-color: #3b4231; /* Darker green/olive */
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 4%;
+}
+
+.services-testimonial-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Melodrama', serif;
+  font-size: 18vw;
+  color: rgba(255,255,255,0.03);
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.services-testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.services-testi-left {
+  flex: 1;
+}
+
+.services-testi-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.services-testi-right {
+  flex: 1.2;
+}
+
+.services-testi-quote {
+  font-family: 'Melodrama', serif;
+  font-size: 2.2rem;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.services-testi-author h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.services-testi-author span {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-bento-header {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .bento-grid, .services-wcu-grid, .discounts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero-title-centered {
+    font-size: clamp(2.5rem, 10vw, 3.5rem);
+    margin-bottom: -20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bento-grid, .services-wcu-grid, .discounts-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-large {
+    grid-row: span 1;
+  }
+  .services-hero-title {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,215 @@
+/* ==========================================================================
+   GALLERY STYLES
+   ========================================================================== */
+
+.gallery-section {
+  padding: 4rem 4% 1rem 4%;
+  background-color: var(--body-bg-color);
+}
+
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.gallery-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.gallery-subtitle {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Endless Scrolling Marquee */
+.gallery-marquee-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: var(--body-bg-color);
+  padding: 1rem 0 4rem 0;
+}
+
+.gallery-marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+.gallery-marquee-track:hover .gallery-marquee-list {
+  animation-play-state: paused;
+}
+
+.gallery-marquee-list {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+  animation: scroll-marquee 30s linear infinite;
+}
+
+.gallery-item {
+  width: 450px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gallery-item {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 280px;
+    height: 380px;
+  }
+  .gallery-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Gallery Categories Section */
+.gallery-categories-section {
+  padding: 6rem 4%;
+  background-color: var(--body-bg-color);
+}
+
+.gallery-categories-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.gc-card {
+  display: block;
+}
+
+.gc-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gc-img-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+}
+
+.gc-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gc-card:hover .gc-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.gc-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30, 30, 25, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gc-card:hover .gc-overlay {
+  opacity: 1;
+}
+
+.gc-overlay span {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.gc-card:hover .gc-overlay span {
+  transform: translateY(0);
+}
+
+.gc-content h3 {
+  font-family: 'Melodrama', serif;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.gc-card:hover .gc-content h3 {
+  color: var(--third-color);
+}
+
+.gc-content p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .gc-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .gc-content h3 {
+    font-size: 2rem;
+  }
+}

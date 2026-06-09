@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=melodrama@400,500,600,700,300&display=swap');
+
+@import './variables.css';
+@import './typography.css';
+@import './animations.css';
+@import './layout.css';
+@import './home.css';
+@import './about.css';
+@import './services.css';
+@import './why-choose-us.css';
+@import './scrolling-testi.css';
+@import './partners.css';
+@import './booking-section.css';
+@import './blog.css';
+@import './fullscreen-menu.css';
+@import './footer.css';
+
+/* Global Resets */
+html {
+  scroll-padding-top: 80px; /* Offset for sticky header */
+  scroll-behavior: smooth;
+  font-size: 18px; /* Increases global font size from default 16px */
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* GLOBAL BUTTON HOVER EFFECT */
+button, 
+a[class*="btn"] {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+button:hover, 
+a[class*="btn"]:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 15px rgba(88, 94, 72, 0.15) !important;
+}
+
+button:active, 
+a[class*="btn"]:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 5px rgba(88, 94, 72, 0.1) !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none !important;
+  /* Hide default cursor everywhere */
+}
+
+body {
+  font-family: 'Open Sans', 'Inter', sans-serif;
+  color: var(--text-color);
+  background-color: var(--body-bg-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Cursor Styles */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #a0a090;
+  /* Subtle grey-beige */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid #a0a090;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+  /* Added 4% padding for full-width sleek look */
+}
+
+.boxed-container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 4%;
+}

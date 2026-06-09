@@ -1,0 +1,9 @@
+/* Custom CSS animations (Framer motion handles JS animations) */
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

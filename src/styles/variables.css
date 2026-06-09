@@ -1,0 +1,28 @@
+:root {
+  /* Colors from reference site */
+  --primary-color: #585e48;
+  --secondary-color: #4b5563;
+  --third-color: #000000;
+  --fourth-color: #E6E6DC;
+  --body-bg-color: #FFFEF6;
+  --body-text-color: #666666;
+  --link-color: #000000;
+  --accent-color: #56C477;
+
+  /* Fonts */
+  --font-primary: 'Jost', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-section: 5rem;
+  
+  /* Breakpoints */
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --bp-large: 1440px;
+}

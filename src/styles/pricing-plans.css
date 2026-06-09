@@ -1,0 +1,220 @@
+/* ==========================================================================
+   PRICING PLANS SECTION STYLES
+   ========================================================================== */
+
+.pricing-plans-section {
+  padding: 8rem 4%;
+  position: relative;
+  background-image: url('/about_spa_room_1780659425526.png'); /* Fallback image, will use something similar to the screenshot */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.pricing-plans-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 25, 0.85); /* Dark overlay */
+  z-index: 1;
+}
+
+.pricing-plans-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-plans-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.plan-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.plan-card.dark-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+.plan-card.dark-card .plan-name,
+.plan-card.dark-card .plan-price,
+.plan-card.dark-card .plan-duration,
+.plan-card.dark-card .plan-desc,
+.plan-card.dark-card .plan-features {
+  color: #fff;
+}
+
+.plan-card.light-card {
+  background-color: var(--body-bg-color);
+  color: var(--primary-color);
+  transform: scale(1.05); /* Highlight middle card slightly */
+  z-index: 10;
+  border: none;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.plan-name {
+  font-family: 'Melodrama', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.plan-price-wrapper {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+
+.plan-price {
+  font-family: 'Melodrama', serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.plan-duration {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 0.5rem;
+  opacity: 0.8;
+}
+
+.plan-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  flex-grow: 1;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.plan-card.light-card .feature-icon {
+  color: var(--primary-color);
+}
+
+.plan-card.dark-card .feature-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.plan-btn {
+  background: transparent;
+  padding: 1rem 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: max-content;
+}
+
+.plan-card.dark-card .plan-btn {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.plan-card.dark-card .plan-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.plan-card.light-card .plan-btn {
+  color: var(--primary-color);
+  border: 1px solid rgba(88, 94, 72, 0.3);
+}
+
+.plan-card.light-card .plan-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Popular Badge */
+.popular-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: -1rem;
+  background-color: #6a7458; /* Muted olive */
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Background flourish (the floral outline seen in the design) */
+.floral-flourish {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.plan-card.light-card .floral-flourish {
+  opacity: 0.05;
+}
+
+@media (max-width: 1024px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+  .plan-card.light-card {
+    transform: none;
+  }
+  .pricing-plans-title {
+    font-size: 2.8rem;
+  }
+}

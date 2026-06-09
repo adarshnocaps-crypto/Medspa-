@@ -1,0 +1,767 @@
+/* ==========================================================================
+   SERVICE DETAIL PAGE STYLES
+   ========================================================================== */
+
+/* Hero Section */
+.sd-hero-container {
+  width: 100%;
+  position: relative;
+}
+
+.sd-hero-banner {
+  height: 85vh;
+  min-height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sd-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sd-hero-title-centered {
+  font-family: 'Melodrama', serif;
+  font-size: 7rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.sd-hero-content-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.sd-hero-bottom-content {
+  background-color: var(--body-bg-color);
+  padding: 4rem 3rem;
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  position: relative;
+  transform: translateY(50px);
+}
+
+.sd-hero-bottom-content .vertical-line {
+  width: 1px;
+  height: 60px;
+  background-color: var(--primary-color);
+  margin: 0 auto 2rem;
+}
+
+.breadcrumbs {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.sd-hero-desc {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Overview Section */
+.sd-overview-section {
+  display: flex;
+  background-color: var(--third-color); /* Dark olive */
+  color: #fff;
+}
+
+.sd-overview-left {
+  flex: 1;
+  position: relative;
+}
+
+.sd-overview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 500px;
+}
+
+.sd-overview-right {
+  flex: 1;
+  padding: 6rem 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sd-overview-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.sd-overview-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.sd-overview-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+}
+
+.sd-overview-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.sd-list-icon {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.sd-book-btn {
+  align-self: flex-start;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.sd-book-btn::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-top: 10px solid #fff;
+  border-right: 10px solid transparent;
+}
+
+.sd-book-btn:hover {
+  background-color: #fff;
+  color: var(--third-color);
+}
+
+/* Benefits Section */
+.sd-benefits-section {
+  background-color: var(--body-bg-color);
+  padding: 8rem 4%;
+}
+
+.sd-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sd-benefit-card {
+  background-color: #fff;
+  border: 1px solid rgba(88, 94, 72, 0.1);
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sd-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.03);
+}
+
+.sd-benefit-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.sd-benefit-title {
+  font-family: 'Melodrama', serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.sd-benefit-desc {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.sd-wcu-section {
+  background-color: var(--body-bg-color); /* Kept beige */
+  padding: 8rem 4%;
+}
+
+.sd-wcu-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sd-wcu-header {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.sd-wcu-header h2 {
+  font-family: 'Melodrama', serif;
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sd-wcu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.sd-wcu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sd-wcu-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.sd-wcu-number {
+  font-family: 'Melodrama', serif;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 0 1rem;
+}
+
+.sd-wcu-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(88, 94, 72, 0.2);
+}
+
+.sd-wcu-title {
+  font-family: 'Melodrama', serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.sd-wcu-desc {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Aftercare Section */
+.sd-aftercare-section {
+  background-color: var(--body-bg-color);
+  display: flex;
+}
+
+.sd-aftercare-left {
+  flex: 1;
+  min-height: 600px;
+}
+
+.sd-aftercare-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sd-aftercare-right {
+  flex: 1;
+  padding: 6rem 8%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sd-aftercare-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+
+.sd-aftercare-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.sd-ac-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sd-ac-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(88, 94, 72, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  color: var(--primary-color);
+}
+
+.sd-ac-content h4 {
+  font-family: 'Melodrama', serif;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sd-ac-content p {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Project Overview Section */
+.sd-project-overview-section {
+  background-color: var(--body-bg-color);
+  padding: 8rem 4% 4rem 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.sd-po-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(88, 94, 72, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+.sd-po-left {
+  flex: 1;
+  min-height: 500px;
+  padding: 0;
+}
+
+.sd-po-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sd-po-right {
+  flex: 1.2;
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sd-po-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.sd-po-desc {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.sd-po-info-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sd-po-info-item {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(88, 94, 72, 0.1);
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+
+.sd-po-info-item:first-child {
+  border-top: 1px solid rgba(88, 94, 72, 0.1);
+}
+
+/* Project Goals Section */
+.sd-project-goals-section {
+  background-color: var(--body-bg-color);
+  padding: 4rem 4% 8rem 4%;
+}
+
+.sd-pg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sd-pg-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.sd-pg-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem 6rem;
+  width: 100%;
+}
+
+.sd-pg-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sd-pg-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(88, 94, 72, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  color: var(--primary-color);
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+
+.sd-pg-item:hover .sd-pg-icon-wrapper {
+  background-color: var(--third-color);
+  border-color: var(--third-color);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(88, 94, 72, 0.2);
+}
+
+.sd-pg-content h4 {
+  font-family: 'Melodrama', serif;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.sd-pg-content p {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* Process Section */
+.sd-process-section {
+  background-color: #EFF1E7;
+  padding: 8rem 4%;
+}
+
+.sd-process-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sd-process-main-title {
+  font-family: 'Melodrama', serif;
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.sd-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.sd-process-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.sd-process-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.sd-process-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(88, 94, 72, 0.2);
+}
+
+.sd-process-num {
+  font-family: 'Melodrama', serif;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin: 0 1rem;
+}
+
+.sd-process-title {
+  font-family: 'Melodrama', serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+.sd-process-desc {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+/* FAQ Section */
+.sd-faq-section {
+  background-color: var(--body-bg-color);
+  padding: 8rem 4%;
+}
+
+.sd-faq-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 6rem;
+  align-items: flex-start;
+}
+
+.sd-faq-title {
+  font-family: 'Melodrama', serif;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.sd-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sd-faq-item {
+  background-color: #fff;
+  border: 1px solid rgba(88, 94, 72, 0.1);
+  padding: 0 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.sd-faq-item:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.sd-faq-question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+
+.sd-faq-question {
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.4;
+  padding-right: 1rem;
+}
+
+.sd-faq-icon-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(88, 94, 72, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(88, 94, 72, 0.6);
+  flex-shrink: 0;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.sd-faq-item.open .sd-faq-icon-circle {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.sd-faq-answer {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+  padding-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+/* FAQ Booking Form */
+.sd-faq-form-wrapper {
+  background-color: var(--primary-color);
+  padding: 3rem 2.5rem;
+  color: #fff;
+  border-radius: 4px;
+  position: sticky;
+  top: 120px;
+}
+
+.sd-faq-form-title {
+  font-family: 'Melodrama', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.sd-faq-form-desc {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.sd-faq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sd-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sd-form-input {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.sd-form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.sd-form-input:focus {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sd-form-submit-btn {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: none;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.sd-form-submit-btn:hover {
+  background-color: var(--third-color);
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .sd-overview-section, .sd-aftercare-section, .sd-project-overview-section {
+    flex-direction: column;
+  }
+  .sd-benefits-grid, .sd-wcu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sd-pg-grid, .sd-process-grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sd-benefits-grid, .sd-wcu-grid, .sd-pg-grid, .sd-process-grid {
+    grid-template-columns: 1fr;
+  }
+  .sd-hero-title {
+    font-size: 4rem;
+  }
+  .sd-hero-title-centered {
+    font-size: 4rem;
+  }
+}

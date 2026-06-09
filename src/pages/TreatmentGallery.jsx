@@ -42,9 +42,10 @@ const TreatmentGallery = () => {
         >
           <div className="tg-hero-overlay"></div>
           <div className="tg-hero-content">
-            <Link to="/gallery" className="tg-back-link">
-              <ArrowLeft size={16} /> Back to All Galleries
-            </Link>
+            <div className="vertical-line" style={{ margin: '0 auto 1.5rem', borderColor: '#fff' }}></div>
+            <p className="breadcrumbs" style={{ color: 'rgba(255,255,255,0.8)', justifyContent: 'center' }}>
+              <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Home</Link> &gt; <Link to="/gallery" style={{ color: 'inherit', textDecoration: 'none' }}>Gallery</Link> &gt; <span style={{ color: '#fff' }}>{treatment.title}</span>
+            </p>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

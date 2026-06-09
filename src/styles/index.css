@@ -22,7 +22,7 @@ html {
   scroll-padding-top: 80px; /* Offset for sticky header */
   scroll-behavior: smooth;
   font-size: 18px; /* Increases global font size from default 16px */
-  overflow-x: hidden;
+  overflow-x: clip; /* clip preserves sticky positioning while hiding horizontal overflow */
   width: 100%;
 }
 
@@ -102,4 +102,22 @@ body {
   max-width: 1350px;
   margin: 0 auto;
   padding: 0 4%;
+}
+
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--body-bg-color);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-logo {
+  max-width: 140px;
+  height: auto;
 }

@@ -38,6 +38,13 @@
   line-height: 1.6;
 }
 
+.hero-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
 .btn-hero-outline {
   position: relative;
   display: inline-flex;

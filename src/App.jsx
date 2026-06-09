@@ -1,9 +1,11 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { AnimatePresence } from 'framer-motion';
 import Layout from './components/layout/Layout';
 import CustomCursor from './components/ui/CustomCursor';
 import ScrollToTop from './components/ui/ScrollToTop';
+import Preloader from './components/ui/Preloader';
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'));
@@ -21,12 +23,25 @@ const BookAppointment = lazy(() => import('./pages/BookAppointment'));
 const TreatmentGallery = lazy(() => import('./pages/TreatmentGallery'));
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Show preloader for at least 1.5 seconds on initial load
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <HelmetProvider>
       <CustomCursor />
+      <AnimatePresence>
+        {loading && <Preloader />}
+      </AnimatePresence>
       <BrowserRouter>
         <ScrollToTop />
-        <Suspense fallback={<div className="loading-spinner">Loading...</div>}>
+        <Suspense fallback={<Preloader />}>
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />

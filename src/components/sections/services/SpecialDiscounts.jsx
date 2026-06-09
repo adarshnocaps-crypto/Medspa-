@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Gift } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const discounts = [
   {
@@ -91,9 +92,9 @@ const SpecialDiscounts = () => {
                 ))}
               </ul>
               
-              <button className="discount-btn" style={{ '--btn-color': item.textColor, '--btn-bg': item.bgColor, borderColor: item.textColor, color: item.textColor, position: 'relative', zIndex: 2 }}>
+              <Link to="/book-appointment" className="discount-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', '--btn-color': item.textColor, '--btn-bg': item.bgColor, borderColor: item.textColor, color: item.textColor, position: 'relative', zIndex: 2 }}>
                 Book Now
-              </button>
+              </Link>
             </motion.div>
           ))}
         </motion.div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const blogPosts = [
   {
-    id: 1,
+    id: '5-morning-rituals-to-awaken-your-senses-and-reveal-glowing-skin',
     image: "/blog_img_1.png",
     date: "December 22, 2025",
     category: "Skincare - MedSpa Treatments",
@@ -12,7 +12,7 @@ const blogPosts = [
     excerpt: "Start your day with mindful moments that energize your body, calm your mind, and bring out your natural glow from within—setting a beautiful tone for everything that follows."
   },
   {
-    id: 2,
+    id: 'choosing-the-right-essential-oils-for-harmony-and-balance',
     image: "/blog_img_2.png",
     date: "December 22, 2025",
     category: "Natural Glow - Skincare",

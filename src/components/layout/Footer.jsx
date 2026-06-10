@@ -50,7 +50,9 @@ const Footer = () => {
           <div className="footer-col-2">
             <div className="footer-contact-block">
               <span className="footer-label">Give Us A Call:</span>
-              <h3 className="contact-phone">(602) 266-5755</h3>
+              <h3 className="contact-phone">
+                <a href="tel:+16022665755" style={{ textDecoration: 'none', color: 'inherit' }}>(602) 266-5755</a>
+              </h3>
             </div>
             
             <div className="footer-contact-block">
@@ -63,7 +65,9 @@ const Footer = () => {
 
             <div className="footer-contact-block">
               <p className="footer-label" style={{ marginBottom: '0.5rem' }}>Open Daily: 9:00 AM &ndash; 8:00 PM</p>
-              <p className="footer-label">Send Mail: booking@relaxomedspa.com</p>
+              <p className="footer-label">
+                Send Mail: <a href="mailto:booking@relaxomedspa.com" style={{ textDecoration: 'none', color: 'inherit' }}>booking@relaxomedspa.com</a>
+              </p>
             </div>
           </div>
 

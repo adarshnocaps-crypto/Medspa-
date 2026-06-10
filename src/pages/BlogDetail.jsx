@@ -30,7 +30,7 @@ const BlogDetail = () => {
       <section className="about-hero-container">
         <div 
           className="about-hero-banner" 
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1920&h=1080')` }}
+          style={{ backgroundImage: `url('${post.image}')` }}
         >
           <div className="about-hero-overlay"></div>
           <motion.h1 
@@ -79,7 +79,7 @@ const BlogDetail = () => {
               </p>
 
               <div className="article-image-grid">
-                <img src="https://images.unsplash.com/photo-1519824145371-29681b471be8?auto=format&fit=crop&q=80&w=600" alt="Spa Detail" />
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=600" alt="Spa Detail" />
                 <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600" alt="Spa Detail 2" />
               </div>
 

@@ -23,7 +23,7 @@ const BlogDetail = () => {
   return (
     <div className="blog-detail-page">
       <Helmet>
-        <title>{post.title} | MedSpa Blog</title>
+        <title>{post.title} | Vixen Spa Services Blog</title>
       </Helmet>
 
       {/* Hero Section */}
@@ -79,14 +79,14 @@ const BlogDetail = () => {
               </p>
 
               <div className="article-image-grid">
-                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=600" alt="Spa Detail" />
-                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600" alt="Spa Detail 2" />
+                <img src="/vixen/banners/back-massage-relax.jpg" alt="Spa Detail" />
+                <img src="/vixen/banners/therapist-back-massage.jpg" alt="Spa Detail 2" />
               </div>
 
               <h4 className="article-subheading">1. Exfoliation Removes Dead Skin Cells</h4>
               <p>Your back is prone to accumulating dead skin cells, which can clog pores and lead to breakouts. Regular exfoliation helps slough off these dead cells, revealing fresh, healthy skin underneath.</p>
 
-              <h4 className="article-subheading">2. Promotes Deep Breathing and Muscle Relaxoation</h4>
+              <h4 className="article-subheading">2. Promotes Deep Breathing and Muscle Relaxation</h4>
               <p>When combined with a gentle massage, back exfoliation can help release tension in the muscles, promoting deep relaxation and stress relief.</p>
 
               <h4 className="article-subheading">3. Cleanses with Care</h4>
@@ -126,7 +126,7 @@ const BlogDetail = () => {
               
               <div className="comment-list">
                 <div className="comment-item">
-                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" className="comment-avatar" />
+                  <img src="/vixen-spa-favicon.png" alt="User" className="comment-avatar" />
                   <div className="comment-body">
                     <div className="comment-header">
                       <h5>Olivia Bennett</h5>
@@ -138,7 +138,7 @@ const BlogDetail = () => {
                 </div>
 
                 <div className="comment-item reply">
-                  <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User" className="comment-avatar" />
+                  <img src="/vixen-spa-favicon.png" alt="User" className="comment-avatar" />
                   <div className="comment-body">
                     <div className="comment-header">
                       <h5>Marcus Collins</h5>

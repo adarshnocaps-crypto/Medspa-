@@ -17,7 +17,7 @@
 }
 
 .wcu-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -108,7 +108,7 @@
 }
 
 .wcu-feature-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.2;

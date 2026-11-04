@@ -16,6 +16,19 @@
   position: relative;
 }
 
+/* Brand crest */
+.footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer-logo {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Huge Outline Text */
 .footer-huge-text-container {
   text-align: center;
@@ -24,7 +37,7 @@
 }
 
 .footer-huge-text {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 15vw; /* Scales with screen */
   font-weight: 600;
   line-height: 0.8;
@@ -46,7 +59,7 @@
 
 /* Typography Overrides for Footer */
 .footer-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.1;
@@ -55,7 +68,7 @@
 }
 
 .footer-subtitle {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
@@ -132,7 +145,7 @@
 }
 
 .contact-phone {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.2rem;
   color: #fff;
   margin: 0 0 2rem 0;
@@ -251,4 +264,11 @@
   .footer-huge-text {
     font-size: 20vw;
   }
+}
+
+/* Outline text shows overlapping contours in Montserrat: use a soft filled word instead */
+.footer-huge-text {
+  color: rgba(255, 255, 255, 0.12);
+  -webkit-text-stroke: 0;
+  letter-spacing: 0.04em;
 }

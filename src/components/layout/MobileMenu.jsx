@@ -29,7 +29,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
           >
             <div className="mobile-menu-header">
               <Link to="/" className="mobile-logo" onClick={onClose}>
-                <img src="/logo.png" alt="MedSpa Logo" className="mobile-logo-img" />
+                <img src="/vixen-spa-logo.png" alt="Vixen Spa Services" className="mobile-logo-img" />
               </Link>
               <button className="close-btn" onClick={onClose}>
                 <X size={28} strokeWidth={1} />
@@ -54,7 +54,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             <div className="mobile-menu-footer">
               <div className="contact-info">
                 <p>Appointment:</p>
-                <a href="tel:6022665755" className="phone-link">(602) 266-5755</a>
+                <a href="tel:+13238739014" className="phone-link">(323) 873-9014</a>
               </div>
             </div>
           </motion.div>

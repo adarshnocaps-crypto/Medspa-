@@ -43,7 +43,7 @@ const FullscreenMenu = ({ isOpen, onClose }) => {
         >
           <div className="fs-menu-header">
             <Link to="/" onClick={onClose} className="fs-menu-logo">
-              <img src="/logo.png" alt="Relax SPA STUDIO" className="fs-logo-img" />
+              <img src="/vixen-spa-logo.png" alt="Vixen Spa Services" className="fs-logo-img" />
             </Link>
             <button className="fs-close-btn" onClick={onClose} aria-label="Close menu">
               <X size={32} strokeWidth={1} />
@@ -71,21 +71,20 @@ const FullscreenMenu = ({ isOpen, onClose }) => {
               <motion.div className="fs-info-grid" variants={itemVariants}>
                 <div className="fs-info-col">
                   <h4>Contact Us</h4>
-                  <p>Relaxoo MedSpa</p>
-                  <p>128 Madison Avenue, Suite 7A, NY</p>
-                  <p>Phone: <a href="tel:+84987123456" style={{color: 'inherit', textDecoration: 'none'}}>+84 987 123 456</a></p>
+                  <p>Vixen Spa Services</p>
+                  <p>337 S Beverly Dr, Beverly Hills, CA 90212</p>
+                  <p>Phone: <a href="tel:+13238739014" style={{color: 'inherit', textDecoration: 'none'}}>(323) 873-9014</a></p>
                 </div>
                 <div className="fs-info-col">
                   <h4>Booking & Service Support</h4>
-                  <p>Email: <a href="mailto:booking@relaxomedspa.com" style={{color: 'inherit', textDecoration: 'none'}}>booking@relaxomedspa.com</a></p>
-                  <p>Customer Care: <a href="mailto:support@relaxomedspa.com" style={{color: 'inherit', textDecoration: 'none'}}>support@relaxomedspa.com</a></p>
-                  <p>Phone: <a href="tel:+84987123456" style={{color: 'inherit', textDecoration: 'none'}}>+84 987 123 456</a></p>
+                  <p style={{ overflowWrap: 'anywhere' }}>Email: <a href="mailto:priscilla@lymphaticdrainagemassage.com" style={{color: 'inherit', textDecoration: 'none', fontSize: '0.9em'}}>priscilla@<wbr />lymphaticdrainagemassage.com</a></p>
+                  <p>Call or Text: <a href="tel:+13238739014" style={{color: 'inherit', textDecoration: 'none'}}>(323) 873-9014</a></p>
+                  <p>Website: <a href="https://lymphaticdrainagemassage.com" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none', fontSize: '0.9em'}}>lymphaticdrainagemassage.com</a></p>
                 </div>
                 <div className="fs-info-col">
                   <h4>Opening Hours</h4>
-                  <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-                  <p>Saturday: 10:00 AM - 8:00 PM</p>
-                  <p>Holliday: Closed</p>
+                  <p>By Appointment Only</p>
+                  <p>Monday - Friday: 9:00 AM - 9:00 PM</p>
                 </div>
               </motion.div>
             </div>
@@ -93,26 +92,23 @@ const FullscreenMenu = ({ isOpen, onClose }) => {
             {/* Right Side */}
             <motion.div className="fs-menu-right" variants={itemVariants}>
               <div className="fs-menu-img-wrapper">
-                <img src="/about_spa_room_1780659425526.png" alt="MedSpa Treatment Room" className="fs-menu-img" />
+                <img src="/vixen/beauty-portrait.jpg" alt="Vixen Spa Services client" className="fs-menu-img" />
               </div>
               <div className="fs-menu-message">
                 <h3 className="fs-message-title">
-                  INDULGE IN ELEGANT SPA RITUALS CAREFULLY CRAFTED TO BALANCE YOUR BODY AND MIND.
+                  GENTLE, EXPERT RECOVERY CARE CRAFTED TO HELP YOU HEAL BEAUTIFULLY AFTER COSMETIC SURGERY.
                 </h3>
                 <p className="fs-message-desc">
-                  Every detail at Relaxoo MedSpa gently invites you to slow down, unwind.
+                  Every detail at Vixen Spa Services gently invites you to slow down, unwind.
                 </p>
                 <div className="fs-social-links">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="LinkedIn">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                  </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="Instagram">
+                  <a href="https://www.instagram.com/vixenspaservices_/" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="Instagram">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="Twitter">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                  <a href="https://www.yelp.com/biz/vixen-spa-services-beverly-hills" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="Yelp reviews" title="Yelp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="Facebook">
+                  <a href="https://www.facebook.com/p/Vixen-Spa-Services-100047713643917/" target="_blank" rel="noopener noreferrer" className="fs-social-btn" aria-label="Facebook">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                   </a>
                 </div>

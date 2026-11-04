@@ -1,33 +1,35 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Gift } from 'lucide-react';
+import { HeartPulse } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const discounts = [
+// Cosmetic procedures Vixen Spa Services provides recovery care for
+// (from the business's hyperbaric oxygen therapy page and client testimonials).
+const procedureGroups = [
   {
     id: 1,
-    title: "Relaxoation Combo",
-    discount: "-20%",
-    desc: "Perfect for relieving stress, easing tension, and fully restoring your energy.",
-    includes: ["Body massage + Aroma therapy", "90 minutes"],
-    bgColor: "#606852", /* Dark olive matching screenshot exactly */
+    title: "Body Procedures",
+    label: "01",
+    desc: "Recovery care after the most common body contouring surgeries.",
+    includes: ["Liposuction", "BBL (Brazilian Butt Lift) & Fat Transfers", "Tummy Tuck", "Mommy Makeover"],
+    bgColor: "#606852", /* Dark olive */
     textColor: "#ffffff"
   },
   {
     id: 2,
-    title: "Facial Glow Package",
-    discount: "-15%",
-    desc: "Helps your skin look instantly brighter, smoother, and naturally healthier.",
-    includes: ["Detox facial + Hydrating mask", "60 minutes"],
-    bgColor: "#edf0e8", /* Light beige-green matching screenshot */
+    title: "Face & Neck",
+    label: "02",
+    desc: "Gentle aftercare for delicate facial procedures.",
+    includes: ["Facelift & Chin Liposuction", "Rhinoplasty / Nose Job", "Mentoplasty / Chin Augmentation", "Blepharoplasty / Eyelid Surgery"],
+    bgColor: "#edf0e8", /* Light beige-green */
     textColor: "#333333" /* Dark text */
   },
   {
     id: 3,
-    title: "Wellness Weekday Deal",
-    discount: "-10%",
-    desc: "Helps your skin look instantly brighter, smoother, and naturally healthier.",
-    includes: ["All basic care services", "Monday - Thursday"],
+    title: "Breast & More",
+    label: "03",
+    desc: "Support before and after many other cosmetic procedures.",
+    includes: ["Breast Augmentation / Breast Lift", "Gynecomastia Treatment", "Cyst Removal & Hair Transplants", "Kybella, Fillers & Botox"],
     bgColor: "#ffffff",
     textColor: "#333333",
     outline: true
@@ -38,18 +40,18 @@ const SpecialDiscounts = () => {
   return (
     <section className="special-discounts-section">
       <div className="special-discounts-container">
-        
-        <motion.div 
+
+        <motion.div
           className="discounts-header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="discounts-title">SPECIAL DISCOUNTS</h2>
+          <h2 className="discounts-title">PROCEDURES WE SUPPORT</h2>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="discounts-grid"
           initial="hidden"
           whileInView="visible"
@@ -58,18 +60,18 @@ const SpecialDiscounts = () => {
             visible: { transition: { staggerChildren: 0.2 } }
           }}
         >
-          {discounts.map((item) => (
-            <motion.div 
-              key={item.id} 
+          {procedureGroups.map((item) => (
+            <motion.div
+              key={item.id}
               className={`discount-card ${item.outline ? 'outline-card' : 'filled-card'}`}
               variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
               style={{ backgroundColor: item.bgColor, color: item.textColor }}
             >
-              <Gift 
-                className="discount-bg-icon" 
-                size={220} 
-                strokeWidth={0.3} 
-                style={{ color: item.textColor }} 
+              <HeartPulse
+                className="discount-bg-icon"
+                size={220}
+                strokeWidth={0.3}
+                style={{ color: item.textColor }}
               />
               {item.id === 1 && (
                 <>
@@ -77,10 +79,10 @@ const SpecialDiscounts = () => {
                   <div className="quote-icon-large">”</div>
                 </>
               )}
-              <h3 className="discount-percent" style={{ position: 'relative', zIndex: 2 }}>{item.discount}</h3>
+              <h3 className="discount-percent" style={{ position: 'relative', zIndex: 2 }}>{item.label}</h3>
               <h4 className="discount-card-title" style={{ position: 'relative', zIndex: 2 }}>{item.title}</h4>
               <p className="discount-card-desc" style={{ position: 'relative', zIndex: 2 }}>{item.desc}</p>
-              
+
               <ul className="discount-includes" style={{ position: 'relative', zIndex: 2 }}>
                 {item.includes.map((inc, i) => (
                   <li key={i}>
@@ -91,7 +93,7 @@ const SpecialDiscounts = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <Link to="/book-appointment" className="discount-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', '--btn-color': item.textColor, '--btn-bg': item.bgColor, borderColor: item.textColor, color: item.textColor, position: 'relative', zIndex: 2 }}>
                 Book Now
               </Link>

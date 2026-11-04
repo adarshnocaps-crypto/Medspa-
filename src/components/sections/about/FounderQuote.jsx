@@ -12,7 +12,7 @@ const FounderQuote = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600" alt="Dr. Eleanor Vance" className="founder-img" />
+          <img src="/vixen-spa-logo.png" alt="Priscilla Martinez, founder of Vixen Spa Services" className="founder-img" />
         </motion.div>
 
         <motion.div 
@@ -24,9 +24,9 @@ const FounderQuote = () => {
         >
           <div className="quote-icon">"</div>
           <p className="founder-quote-text">
-            "I created Relaxoo MedSpa with a simple vision: to provide a sanctuary where advanced aesthetics and holistic wellness blend seamlessly. Our goal is not just to transform how you look, but to elevate how you feel."
+            "I created Vixen Spa Services with a simple vision: to provide a sanctuary where advanced aesthetics and holistic wellness blend seamlessly. Our goal is not just to transform how you look, but to elevate how you feel."
           </p>
-          <p className="founder-name">Eleanor Vance, Founder & Lead Esthetician</p>
+          <p className="founder-name">Priscilla Martinez, Founder & Licensed Massage Therapist</p>
         </motion.div>
       </div>
     </section>

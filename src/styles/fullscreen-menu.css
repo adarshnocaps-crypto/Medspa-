@@ -24,8 +24,8 @@
 }
 
 .fs-logo-img {
-  width: 140px;
-  height: auto;
+  height: 84px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .fs-main-link {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -227,4 +227,77 @@
   .fs-info-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Dark top strip so the transparent gold logo is clearly visible */
+.fs-menu-header {
+  background-color: #585e48;
+  border-bottom: 1px solid rgba(217, 180, 106, 0.35);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fs-menu-header .fs-close-btn {
+  color: #f6efe1;
+}
+
+/* Uppercase tagline reads better in the clean sans font */
+.fs-message-title {
+  font-family: var(--font-primary) !important;
+  font-weight: 500 !important;
+}
+
+
+/* ==========================================================================
+   Olive fullscreen menu (matches header + footer)
+   ========================================================================== */
+.fullscreen-menu-overlay {
+  background-color: var(--primary-color);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+}
+
+.fs-menu-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(236, 208, 143, 0.35);
+}
+
+.fs-main-link {
+  color: #f6efe1;
+}
+
+.fs-main-link::after {
+  background-color: #ecd08f;
+}
+
+.fs-main-link:hover {
+  color: #ecd08f;
+}
+
+.fs-info-grid {
+  border-top: 1px solid rgba(246, 239, 225, 0.2);
+}
+
+.fs-info-col h4 {
+  color: #ecd08f;
+}
+
+.fs-info-col p,
+.fs-info-col a,
+.fs-message-desc {
+  color: rgba(246, 239, 225, 0.85);
+}
+
+.fs-message-title {
+  color: #f6efe1;
+}
+
+.fs-social-btn {
+  border: 1px solid rgba(246, 239, 225, 0.35);
+  color: #f6efe1;
+}
+
+.fs-social-btn:hover {
+  background-color: #ecd08f;
+  color: #3f4433;
+  border-color: #ecd08f;
 }

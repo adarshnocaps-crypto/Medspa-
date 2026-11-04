@@ -2,37 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Star, Quote, ArrowRight } from 'lucide-react';
+import { reviews as allReviews, WEBSITE_URL } from '../../data/reviews';
+import YelpPhotoStrip from './YelpPhotoStrip';
+import { yelpPhotos } from '../../data/yelpPhotos';
 
-const reviews = [
-  {
-    id: 1,
-    name: "Cynthia Jonson",
-    location: "NEW YORK, USA",
-    text: "I have suffered from severe acne scars for years. The Relaxo MedSpa team helped me to rejuvenate my skin with their advanced laser treatments. I had a great experience with them, I highly recommend!",
-    avatar: "/testi_avatar.png"
-  },
-  {
-    id: 2,
-    name: "Michel Garrison",
-    location: "NEW YORK, USA",
-    text: "The body contouring treatments here are life-changing. The staff is incredibly knowledgeable and made me feel so comfortable. The results speak for themselves, highly recommended!",
-    avatar: "/avatar_2.png"
-  },
-  {
-    id: 3,
-    name: "Ashley Maxwell",
-    location: "NEW YORK, USA",
-    text: "After just one session of the HydraFacial, my skin looked completely renewed. The aesthetician took the time to understand my skin type and customized the treatment perfectly.",
-    avatar: "/avatar_3.png"
-  },
-  {
-    id: 4,
-    name: "Emma Watson",
-    location: "NEW YORK, USA",
-    text: "I was nervous about getting dermal fillers, but the doctor here was extremely gentle and explained everything. The results are so natural, I couldn't be happier with my new look.",
-    avatar: "/avatar_4.png"
-  }
-];
+const reviews = allReviews.map(r => ({ ...r, text: r.short }));
+
+// Real client testimonials from the business website (see data/reviews.js). Cards show the
+// client's initials because no client photos are published.
+const getInitials = (name) => name.split(' ').map(part => part[0]).join('').replace(/[^A-Z]/gi, '').slice(0, 2).toUpperCase();
 
 const ScrollingTestimonials = () => {
   // Animation variants for the left sticky column
@@ -83,12 +61,11 @@ const ScrollingTestimonials = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.img 
-            variants={childVariants}
-            src="/scrolling_testi_left.png" 
-            alt="MedSpa Consultation" 
-            className="scroll-testi-img" 
-          />
+          <motion.div variants={childVariants} className="scroll-testi-photos">
+            {yelpPhotos.slice(0, 3).map((photo) => (
+              <img key={photo.src} src={photo.src} alt={photo.alt} />
+            ))}
+          </motion.div>
           <motion.p variants={childVariants} className="scroll-testi-subtitle">
             CLIENTS TESTIMONIAL
           </motion.p>
@@ -96,12 +73,15 @@ const ScrollingTestimonials = () => {
             What our <span>Happy Clients</span> <br/>reviewed about Us
           </motion.h2>
           <motion.p variants={childVariants} className="scroll-testi-desc">
-            For our patients seeking aesthetic enhancements and restorative treatments. The luxury wellness experience begins right here.
+            Real words from clients Priscilla has helped recover after liposuction, BBL and other cosmetic procedures.
           </motion.p>
-          <motion.div variants={childVariants}>
-            <Link to="/contact" className="btn btn-outline" style={{ display: 'inline-flex', gap: '10px' }}>
-              Ask More Questions Here <ArrowRight size={18} />
+          <motion.div variants={childVariants} style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+            <Link to="/testimonials" className="btn btn-outline" style={{ display: 'inline-flex', gap: '10px' }}>
+              Read All Reviews <ArrowRight size={18} />
             </Link>
+            <a href={WEBSITE_URL} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ display: 'inline-flex', gap: '10px' }}>
+              Visit Our Website <ArrowRight size={18} />
+            </a>
           </motion.div>
         </motion.div>
 
@@ -121,7 +101,11 @@ const ScrollingTestimonials = () => {
               </div>
               
               <div className="card-avatar-wrapper">
-                <img src={review.avatar} alt={review.name} className="card-avatar" />
+                {review.avatar ? (
+                  <img src={review.avatar} alt={review.name} className="card-avatar" />
+                ) : (
+                  <div className="card-avatar card-avatar-initials" aria-hidden="true">{getInitials(review.name)}</div>
+                )}
               </div>
               
               <div className="card-content">
@@ -143,6 +127,7 @@ const ScrollingTestimonials = () => {
         </div>
 
       </div>
+      <YelpPhotoStrip />
     </section>
   );
 };

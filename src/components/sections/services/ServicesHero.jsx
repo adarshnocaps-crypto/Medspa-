@@ -17,7 +17,7 @@ const ServicesHero = () => {
     <section className="services-hero-container">
       <div 
         className="services-hero-banner"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1920&h=600')` }}
+        style={{ backgroundImage: `url('/vixen/banners/back-massage-relax.jpg')` }}
       >
         <div className="services-hero-overlay"></div>
         <motion.h1 
@@ -46,7 +46,7 @@ const ServicesHero = () => {
           <div className="vertical-line"></div>
           <p className="breadcrumbs">Home &gt; Services</p>
           <p className="services-hero-desc">
-            Experience thoughtfully crafted treatments where every detail supports deep relaxation and holistic renewal for body and mind.
+            Lymphatic drainage, BBL and tummy tuck massages, body sculpting, wood therapy, vacuum therapy, cellulite massages and hyperbaric oxygen therapy.
           </p>
         </motion.div>
       </div>

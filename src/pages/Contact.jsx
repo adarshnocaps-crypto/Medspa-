@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <Helmet>
-        <title>Contact Us | MedSpa</title>
+        <title>Contact Us | Vixen Spa Services</title>
         <meta name="description" content="Get in touch for bookings, questions, or personalized recommendations." />
       </Helmet>
 
@@ -105,9 +105,9 @@ const Contact = () => {
             </div>
             <div className="info-content">
               <h3 className="info-title">Contact Us</h3>
-              <p className="info-text">Relaxoo MedSpa</p>
-              <p className="info-text">128 Madison Avenue, Suite 7A, NY</p>
-              <p className="info-text">Phone: +84 987 123 456</p>
+              <p className="info-text">Vixen Spa Services</p>
+              <p className="info-text">337 S Beverly Dr, Beverly Hills, CA 90212</p>
+              <p className="info-text">Phone: <a href="tel:+13238739014" style={{ color: 'inherit', textDecoration: 'none' }}>(323) 873-9014</a></p>
             </div>
           </motion.div>
 
@@ -123,9 +123,9 @@ const Contact = () => {
             </div>
             <div className="info-content">
               <h3 className="info-title">Booking & Service Support</h3>
-              <p className="info-text">Email: booking@relaxomedspa.com</p>
-              <p className="info-text">Customer Care: support@relaxomedspa.com</p>
-              <p className="info-text">Hotline: +84 987 123 456</p>
+              <p className="info-text" style={{ overflowWrap: 'anywhere' }}>Email: <a href="mailto:priscilla@lymphaticdrainagemassage.com" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.9em' }}>priscilla@<wbr />lymphaticdrainagemassage.com</a></p>
+              <p className="info-text">Call or Text: <a href="tel:+13238739014" style={{ color: 'inherit', textDecoration: 'none' }}>(323) 873-9014</a></p>
+              <p className="info-text">Website: <a href="https://lymphaticdrainagemassage.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', fontSize: '0.9em' }}>lymphaticdrainagemassage.com</a></p>
             </div>
           </motion.div>
 
@@ -141,9 +141,8 @@ const Contact = () => {
             </div>
             <div className="info-content">
               <h3 className="info-title">Opening Hours</h3>
-              <p className="info-text">Monday - Friday: 9:00 AM — 8:00 PM</p>
-              <p className="info-text">Saturday: 10:00 AM — 8:00 PM</p>
-              <p className="info-text">Holliday: Closed</p>
+              <p className="info-text">By Appointment Only</p>
+              <p className="info-text">Monday - Friday: 9:00 AM — 9:00 PM</p>
             </div>
           </motion.div>
 

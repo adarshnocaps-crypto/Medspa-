@@ -1,226 +1,220 @@
-import { Droplets, Sparkles, Sun, Activity, Zap, Heart, Wind, Flower2 } from 'lucide-react';
+import { Droplets, Sparkles, Activity, HeartPulse, Flower2, Wind, Sun, Waves, Leaf, Gem, Hand, Zap } from 'lucide-react';
 
+// Services offered by Vixen Spa Services (Beverly Hills, CA).
+// Sourced from the business card (Wood Therapy, Lymphatic Drainage Massage, Body Sculpting,
+// Wood Therapy – Cellulite, Vacuum Therapy, Cellulite Massages, Tummy Tuck Massages,
+// BBL massages & aftercare), the business's website (lymphaticdrainagemassage.com),
+// its Facebook page and its published client testimonials.
+// `image` is used in cards/sections; `heroImage` is an upscaled copy for full-width banners.
 export const categories = [
-  "Skin Rejuvenation",
-  "Injectables & Anti-Aging",
-  "Laser Treatments",
-  "Body Contouring & Wellness"
+  "Post-Op Aftercare",
+  "Body Sculpting",
+  "Cellulite Treatments",
+  "Hyperbaric Oxygen Therapy"
 ];
 
 export const servicesData = {
-  "Skin Rejuvenation": [
+  "Post-Op Aftercare": [
     {
-      id: "hydrafacial",
-      title: "HydraFacial",
+      id: "lymphatic-drainage-massage",
+      title: "Lymphatic Drainage Massage",
       icon: Droplets,
-      image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=1000&auto=format&fit=crop", /* Facial treatment */
-      description: "Experience the essence of skin renewal with restorative treatments crafted to reveal your natural glow. Each ritual gently purifies, deeply hydrates, and revitalizes your skin leaving it radiant and renewed.",
+      image: "/vixen/back-massage-relax.jpg",
+      heroImage: "/vixen/banners/back-massage-relax.jpg",
+      description: "Post-surgical manual lymphatic drainage uses gentle movements on specific areas of your body to help move lymph fluid and remove toxins from your tissues, easing swelling and helping you heal faster after cosmetic surgery.",
       benefits: [
-        "Deep Cleansing and Exfoliation",
-        "Pore Extraction without Irritation",
-        "Intense Hydration Boost",
-        "Instant Radiant Glow"
+        "Reduces Post-Op Swelling & Bruising",
+        "Relieves Soreness & Fluid Retention",
+        "Supports Circulation & Immune Function",
+        "Gentle, Painless Technique"
       ]
     },
     {
-      id: "microneedling",
-      title: "Microneedling",
+      id: "bbl-aftercare",
+      title: "BBL Massages & Aftercare",
+      icon: HeartPulse,
+      image: "/vixen/therapist-back-massage.jpg",
+      heroImage: "/vixen/banners/therapist-back-massage.jpg",
+      description: "Specialized massages and aftercare after a Brazilian Butt Lift and fat transfer. Gentle lymphatic work for the treated areas that helps reduce swelling and supports a smooth, comfortable recovery.",
+      benefits: [
+        "Gentle Care for Treated Areas",
+        "Reduces Swelling & Fluid Retention",
+        "Helps Smooth Lumps",
+        "Unrushed, Personalized Sessions"
+      ]
+    },
+    {
+      id: "tummy-tuck-massage",
+      title: "Tummy Tuck Massages",
+      icon: Hand,
+      image: "/vixen/post-op-massage.jpg",
+      heroImage: "/vixen/banners/post-op-massage.jpg",
+      description: "Post-op lymphatic massages after a tummy tuck (abdominoplasty) to help ease the swelling, soreness and fluid retention around your abdomen while you heal.",
+      benefits: [
+        "Eases Abdominal Swelling",
+        "Relieves Post-Op Soreness",
+        "Helps Smooth Lumps",
+        "Planned Around Your Surgeon's Instructions"
+      ]
+    },
+    {
+      id: "liposuction-aftercare",
+      title: "Liposuction Aftercare",
       icon: Activity,
-      image: "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=1000&auto=format&fit=crop", /* Medical device/clinic */
-      description: "Stimulate your skin's natural healing process to produce new collagen and elastin. This treatment improves skin texture, reduces scarring, and provides a firmer, more youthful appearance.",
+      image: "/vixen/leg-lymphatic-massage.jpg",
+      heroImage: "/vixen/banners/leg-lymphatic-massage.jpg",
+      description: "After liposuction, patients experience swelling, bruises and soreness along with fluid retention. Qualified manual lymphatic drainage after your procedure helps ensure the best outcome from your cosmetic surgery.",
       benefits: [
-        "Collagen Induction Therapy",
-        "Improves Fine Lines",
-        "Reduces Acne Scars",
-        "Enhances Skin Texture"
+        "Reduces Swelling & Fluid Build-Up",
+        "Helps Flatten Lumps & Knots",
+        "Supports a Smooth, Even Contour",
+        "Trusted by Beverly Hills Surgeons"
       ]
     },
     {
-      id: "chemical-peels",
-      title: "Chemical Peels",
+      id: "mommy-makeover-aftercare",
+      title: "Mommy Makeover Aftercare",
+      icon: Flower2,
+      image: "/vixen/licensed-therapist.jpg",
+      heroImage: "/vixen/banners/massage-flower.jpg",
+      description: "A mommy makeover often combines procedures such as a tummy tuck, liposuction and breast surgery. Post-op lymphatic drainage helps manage swelling across every treated area so you can get back to your life sooner.",
+      benefits: [
+        "Care for Multiple Treated Areas",
+        "Reduces Swelling & Soreness",
+        "Supports a Faster Recovery",
+        "Session Plan Built Around You"
+      ]
+    },
+    {
+      id: "face-neck-drainage",
+      title: "Face, Chin & Neck Drainage",
       icon: Sparkles,
-      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1000&auto=format&fit=crop", /* Glowing skin/peel */
-      description: "Reveal fresh, new skin with our customized chemical peels. Designed to address your specific skin concerns, from hyperpigmentation to uneven texture, for a truly refreshed look.",
+      image: "/vixen/face-neck-drainage.jpg",
+      heroImage: "/vixen/banners/face-neck-drainage.jpg",
+      description: "Focused lymphatic drainage for the face, chin and neck after chin liposuction and other facial procedures. Gentle work that helps smooth lumps and reveal your results sooner.",
       benefits: [
-        "Removes Dead Skin Cells",
-        "Evens Skin Tone",
-        "Softens Rough Texture",
-        "Brightens Complexion"
-      ]
-    },
-    {
-      id: "dermaplaning",
-      title: "Dermaplaning",
-      icon: Sun,
-      image: "https://images.unsplash.com/photo-1552693673-1bf958298935?q=80&w=1000&auto=format&fit=crop", /* Exfoliation */
-      description: "A targeted treatment utilizing careful exfoliation to remove dead skin and peach fuzz. Perfect for restoring vitality and a luminous glow before special events.",
-      benefits: [
-        "Removes Vellus Hair",
-        "Reduces Dullness",
-        "Enhances Product Absorption",
-        "Luminous Finish"
+        "Helps Smooth Lumps After Chin Lipo",
+        "Eases Facial & Neck Swelling",
+        "Gentle Around Sensitive Areas",
+        "Helps Reveal Your Results Sooner"
       ]
     }
   ],
-  "Injectables & Anti-Aging": [
+  "Body Sculpting": [
     {
-      id: "botox",
-      title: "Botox & Dysport",
-      icon: Zap,
-      image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1000&auto=format&fit=crop", /* Injection/Medical */
-      description: "Smooth out fine lines and prevent new wrinkles from forming with our expert injections. A quick, minimally invasive procedure for a rested, youthful expression.",
-      benefits: [
-        "Softens Forehead Lines",
-        "Reduces Crow's Feet",
-        "Prevents New Wrinkles",
-        "Quick Recovery Time"
-      ]
-    },
-    {
-      id: "dermal-fillers",
-      title: "Dermal Fillers",
-      icon: Droplets,
-      image: "/testi_treatment.png", /* Lips/Face close up */
-      description: "Restore lost volume, plump lips, and enhance facial contours. Our premium hyaluronic acid fillers provide natural-looking, immediate results that enhance your unique beauty.",
-      benefits: [
-        "Restores Facial Volume",
-        "Plumps Thin Lips",
-        "Softens Facial Creases",
-        "Natural-Looking Results"
-      ]
-    },
-    {
-      id: "lip-enhancement",
-      title: "Lip Enhancement",
-      icon: Heart,
-      image: "/testi_treatment.png", /* Lips */
-      description: "Achieve the perfect pout with our specialized lip enhancement treatments. We focus on symmetry, volume, and definition for beautifully enhanced, kissable lips.",
-      benefits: [
-        "Increases Lip Volume",
-        "Improves Symmetry",
-        "Defines Lip Borders",
-        "Smooths Lip Lines"
-      ]
-    },
-    {
-      id: "kybella",
-      title: "Kybella",
-      icon: Wind,
-      image: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=1000&auto=format&fit=crop", /* Neck/Profile */
-      description: "Comprehensive injectable protocols utilizing deoxycholic acid to naturally break down and absorb fat cells, significantly reducing the appearance of a double chin.",
-      benefits: [
-        "Eliminates Submental Fat",
-        "Improves Jawline Contour",
-        "Non-Surgical Profile Enhancement",
-        "Long-Lasting Effects"
-      ]
-    }
-  ],
-  "Laser Treatments": [
-    {
-      id: "laser-hair-removal",
-      title: "Laser Hair Removal",
-      icon: Zap,
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1000&auto=format&fit=crop", /* Clinic/Laser */
-      description: "Achieve silky smooth skin permanently. Our advanced laser technology safely and effectively removes unwanted hair from all skin types with minimal discomfort.",
-      benefits: [
-        "Permanent Hair Reduction",
-        "Safe for All Skin Types",
-        "Minimal Discomfort",
-        "Smooth, Flawless Skin"
-      ]
-    },
-    {
-      id: "ipl-photofacial",
-      title: "IPL Photofacial",
-      icon: Sun,
-      image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=1000&auto=format&fit=crop", /* Clinic machine */
-      description: "Erase sun spots, age spots, and freckles. Our targeted intense pulsed light therapy breaks down excess melanin to restore a clear, even, and radiant complexion.",
-      benefits: [
-        "Fades Sun Spots",
-        "Evens Skin Discoloration",
-        "Targets Excess Melanin",
-        "Clearer Complexion"
-      ]
-    },
-    {
-      id: "skin-resurfacing",
-      title: "Skin Resurfacing",
-      icon: Sparkles,
-      image: "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?q=80&w=1000&auto=format&fit=crop", /* Advanced skin tech */
-      description: "Turn back the clock with fractional laser skin resurfacing. This powerful treatment addresses sun damage, fine lines, and uneven texture for dramatic rejuvenation.",
-      benefits: [
-        "Reverses Sun Damage",
-        "Reduces Fine Lines",
-        "Improves Overall Texture",
-        "Stimulates Collagen"
-      ]
-    },
-    {
-      id: "tattoo-removal",
-      title: "Tattoo Removal",
-      icon: Activity,
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1000&auto=format&fit=crop", /* Tattoo laser */
-      description: "Safely and effectively remove unwanted tattoos. Our specialized laser protocols break down ink particles to promote intensive healing and fading.",
-      benefits: [
-        "Fades Unwanted Ink",
-        "Safe for Multiple Colors",
-        "Minimizes Skin Damage",
-        "Clearer Canvas"
-      ]
-    }
-  ],
-  "Body Contouring & Wellness": [
-    {
-      id: "coolsculpting",
-      title: "CoolSculpting",
-      icon: Activity,
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1000&auto=format&fit=crop", /* Medical / Contouring */
-      description: "Contour your body without surgery using advanced freezing technology. Target and permanently destroy fat cells in stubborn areas.",
+      id: "body-sculpting",
+      title: "Body Sculpting",
+      icon: Gem,
+      image: "/vixen/leg-massage-portrait.jpg",
+      heroImage: "/vixen/banners/leg-massage-portrait.jpg",
+      description: "Non-surgical body sculpting that combines targeted techniques such as wood therapy and vacuum therapy to help contour and define your shape, with or without a recent procedure.",
       benefits: [
         "Non-Surgical Contouring",
-        "Freezes Fat Cells",
-        "No Downtime",
-        "Visible Results"
+        "Targets Stubborn Areas",
+        "Combines Wood & Vacuum Therapy",
+        "Personalized to Your Goals"
       ]
     },
     {
-      id: "emsculpt",
-      title: "Emsculpt NEO",
+      id: "wood-therapy",
+      title: "Wood Therapy",
+      icon: Leaf,
+      image: "/vixen/shoulder-massage.jpg",
+      heroImage: "/vixen/banners/shoulder-massage.jpg",
+      description: "Wood therapy (maderoterapia) uses specially shaped wooden tools to massage and sculpt the body, stimulating circulation and lymph flow while helping to contour and smooth problem areas.",
+      benefits: [
+        "Sculpts & Contours the Body",
+        "Stimulates Circulation & Lymph Flow",
+        "Helps Smooth Problem Areas",
+        "Natural, Non-Invasive Technique"
+      ]
+    },
+    {
+      id: "vacuum-therapy",
+      title: "Vacuum Therapy",
       icon: Wind,
-      image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1000&auto=format&fit=crop",
-      description: "Simultaneously build muscle and burn fat. A safe, comfortable body shaping procedure that uses RF and HIFEM energy.",
+      image: "/vixen/massage-flower.jpg",
+      heroImage: "/vixen/banners/massage-flower.jpg",
+      description: "Vacuum therapy uses gentle suction cups to lift and massage the tissue, encouraging lymphatic drainage and circulation while helping to tone and contour the body.",
       benefits: [
-        "Builds Muscle Mass",
-        "Destroys Fat Cells",
-        "Comfortable Procedure",
-        "Permanent Reduction"
+        "Lifts & Tones the Skin",
+        "Encourages Lymphatic Drainage",
+        "Boosts Circulation",
+        "Helps Contour Treated Areas"
       ]
     },
     {
-      id: "skin-tightening",
-      title: "Skin Tightening",
-      icon: Flower2,
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=1000&auto=format&fit=crop", /* Skin */
-      description: "Firm and tighten loose skin on the face and body. Utilizing RF energy to stimulate collagen production and restore elasticity.",
+      id: "cavitation-lipo",
+      title: "Cavitation Lipo",
+      icon: Waves,
+      image: "/vixen/glowing-skin.jpg",
+      heroImage: "/vixen/banners/head-massage.jpg",
+      description: "A non-surgical body contouring treatment that uses ultrasound cavitation to target stubborn areas. Ask Priscilla whether cavitation is right for your body goals.",
       benefits: [
-        "Firms Loose Skin",
-        "Stimulates Collagen",
-        "Non-Invasive Lift",
-        "Restores Elasticity"
+        "Non-Surgical Body Contouring",
+        "Targets Stubborn Areas",
+        "Complements Lymphatic Drainage",
+        "Personalized Recommendations"
+      ]
+    }
+  ],
+  "Cellulite Treatments": [
+    {
+      id: "cellulite-massage",
+      title: "Cellulite Massages",
+      icon: Zap,
+      image: "/vixen/leg-lymphatic-massage.jpg",
+      heroImage: "/vixen/banners/leg-lymphatic-massage.jpg",
+      description: "Targeted massages that boost circulation and help smooth the appearance of cellulite on the thighs, hips, buttocks and other areas.",
+      benefits: [
+        "Helps Smooth Dimpled Skin",
+        "Boosts Circulation",
+        "Supports Lymphatic Flow",
+        "Firmer-Looking Skin"
       ]
     },
     {
-      id: "cellulite-reduction",
-      title: "Cellulite Reduction",
-      icon: Droplets,
-      image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000&auto=format&fit=crop",
-      description: "Smooth away dimples and achieve firmer skin. Our advanced treatments target the structural causes of cellulite for a dramatically smoother appearance.",
+      id: "wood-therapy-cellulite",
+      title: "Wood Therapy – Cellulite",
+      icon: Leaf,
+      image: "/vixen/leg-massage-portrait.jpg",
+      heroImage: "/vixen/banners/leg-massage-portrait.jpg",
+      description: "Wood therapy focused on cellulite: wooden tools are used to work the tissue, stimulating circulation and helping to visibly smooth dimpled areas.",
       benefits: [
-        "Smoothes Dimpled Skin",
-        "Firms and Tightens",
-        "Improves Circulation",
-        "Restores Confidence"
+        "Targets Cellulite-Prone Areas",
+        "Helps Visibly Smooth Skin",
+        "Stimulates Circulation",
+        "Natural, Non-Invasive Technique"
+      ]
+    }
+  ],
+  "Hyperbaric Oxygen Therapy": [
+    {
+      id: "hyperbaric-oxygen-therapy",
+      title: "Hyperbaric Oxygen Therapy",
+      icon: Wind,
+      image: "/vixen/smiling-client.jpg",
+      heroImage: "/vixen/banners/smiling-client.jpg",
+      description: "Hyperbaric oxygen therapy (HBOT) before and after plastic and reconstructive surgery can speed up healing and recovery by up to 75%, with less bruising, swelling and inflammation, so you can return to work sooner, looking and feeling beautiful.",
+      benefits: [
+        "Faster Healing & Recovery",
+        "Less Bruising, Swelling & Inflammation",
+        "Better Scar Healing Through Collagen",
+        "Less Need for Post-Procedure Pain Pills"
+      ]
+    },
+    {
+      id: "hbot-fat-transfer-grafts",
+      title: "HBOT for Fat Transfers & Grafts",
+      icon: Sun,
+      image: "/vixen/radiant-recovery.jpg",
+      heroImage: "/vixen/banners/radiant-recovery.jpg",
+      description: "Hyperbaric oxygen therapy can assist new fat grafts and fat transfers and help compromised skin grafts heal, making it a powerful complement to BBL, breast and facial procedures.",
+      benefits: [
+        "Supports New Fat Grafts & Transfers",
+        "Helps Compromised Skin Grafts",
+        "Pre- & Post-Procedure Sessions",
+        "Pairs With Lymphatic Drainage"
       ]
     }
   ]

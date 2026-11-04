@@ -16,7 +16,7 @@ const AboutHero = () => {
     <section className="about-hero-container">
       <div 
         className="about-hero-banner" 
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=1920&h=1080')` }}
+        style={{ backgroundImage: `url('/vixen/banners/face-neck-drainage.jpg')` }}
       >
         <div className="about-hero-overlay"></div>
         <motion.h1 
@@ -45,7 +45,7 @@ const AboutHero = () => {
           <div className="vertical-line"></div>
           <p className="breadcrumbs">Home &gt; About Us</p>
           <p className="about-hero-desc">
-            Discover our passion for wellness and indulge in the art of true relaxation, where every detail is designed to rejuvenate your body, mind, and spirit.
+            Compassionate, highly experienced post-operative care in Beverly Hills, led by licensed massage therapist Priscilla Martinez.
           </p>
         </motion.div>
       </div>

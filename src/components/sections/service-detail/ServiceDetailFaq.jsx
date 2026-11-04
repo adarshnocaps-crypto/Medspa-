@@ -5,19 +5,19 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Do I need to book an appointment in advance?",
-    answer: "Yes, we highly recommend scheduling your appointment at least 24 hours in advance to ensure that your preferred time slot and therapist are fully reserved, well-prepared, and ready to deliver the most seamless and relaxing experience during your visit."
+    answer: "Yes. All sessions are by appointment only. Call or text (323) 873-9014 to schedule your assessment."
   },
   {
-    question: "How soon will I see results after the treatment?",
-    answer: "Results vary depending on the specific treatment, but many clients notice a visible improvement in skin texture and radiance immediately. Full results typically develop over the following 1-2 weeks."
+    question: "When should I start after my surgery?",
+    answer: "Always follow your surgeon's guidance on timing. At your assessment we plan your sessions around your procedure and your surgeon's post-op instructions."
   },
   {
-    question: "How often should I repeat this treatment for best results?",
-    answer: "For optimal and long-lasting results, we recommend a series of 3-6 treatments spaced 4-6 weeks apart, followed by maintenance sessions tailored to your skin's needs."
+    question: "How many sessions will I need?",
+    answer: "It depends on your procedure and how your body heals. We recommend a plan at your assessment, and packages are available for multi-session recovery."
   },
   {
-    question: "Is this treatment suitable for acne-prone skin?",
-    answer: "Absolutely. We customize every treatment to your specific skin type and concerns, using targeted ingredients and techniques that are safe and beneficial for acne-prone or sensitive skin."
+    question: "Can I combine lymphatic drainage with hyperbaric oxygen therapy?",
+    answer: "Yes. Both offer far-reaching benefits, and together they can help reduce your recovery time after plastic surgery."
   }
 ];
 

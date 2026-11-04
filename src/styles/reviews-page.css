@@ -1,0 +1,206 @@
+/* Reviews page */
+.reviews-page {
+  padding-top: 150px;
+  background-color: var(--body-bg-color);
+}
+
+.reviews-hero {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 4% 2rem;
+  text-align: center;
+}
+
+.reviews-eyebrow {
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.reviews-hero h1 {
+  line-height: 1.2;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+}
+
+.reviews-intro {
+  color: var(--secondary-color);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.reviews-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 4% 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.review-card {
+  background: #fff;
+  border: 1px solid rgba(88, 94, 72, 0.15);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.review-stars {
+  display: flex;
+  gap: 4px;
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--secondary-color);
+  margin-bottom: 1.8rem;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.review-initials {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--body-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+}
+
+.review-name {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.review-meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--secondary-color);
+  opacity: 0.8;
+}
+
+.reviews-cta {
+  background: var(--primary-color);
+  color: var(--body-bg-color);
+  text-align: center;
+  padding: 5rem 4%;
+}
+
+.reviews-cta h2 {
+  color: var(--body-bg-color);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.reviews-cta p {
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.reviews-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.reviews-cta .btn-outline {
+  color: var(--body-bg-color);
+  border-color: var(--body-bg-color);
+}
+
+@media (max-width: 800px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+  .review-card {
+    padding: 1.8rem;
+  }
+}
+
+/* Real photos from Yelp, shown next to the testimonials */
+.yelp-strip {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 3rem 4% 5rem;
+}
+
+.yelp-strip-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.yelp-strip-eyebrow {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.6rem;
+}
+
+.yelp-strip-header h3 {
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  color: var(--primary-color);
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.yelp-strip-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  border-bottom: 1px solid currentColor;
+}
+
+.yelp-strip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.yelp-strip-item {
+  margin: 0;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(88, 94, 72, 0.2);
+  background: #fff;
+}
+
+.yelp-strip-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.yelp-strip-item:hover img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 800px) {
+  .yelp-strip-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

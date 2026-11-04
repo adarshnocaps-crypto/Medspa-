@@ -7,43 +7,43 @@ const testimonials = [
     id: 1,
     name: "Olivia Bennett",
     role: "Marketing Manager",
-    text: "“My Skin Transformed Completely. It Feels Smoother, Brighter, And More Hydrated Than It Has In Years. The Weekly Treatments Are So Relaxoing — Truly A Journey My Skin Needed.”",
-    avatar: "/testi_avatar.png"
+    text: "“My Skin Transformed Completely. It Feels Smoother, Brighter, And More Hydrated Than It Has In Years. The Weekly Treatments Are So Relaxing — Truly A Journey My Skin Needed.”",
+    avatar: "/vixen-spa-favicon.png"
   },
   {
     id: 2,
     name: "Sarah Jenkins",
     role: "Entrepreneur",
     text: "“The absolute pinnacle of luxury and results. After my first laser session, the difference was immediate. The team is incredibly professional and the environment is deeply restorative.”",
-    avatar: "/testi_avatar.png"
+    avatar: "/vixen-spa-favicon.png"
   },
   {
     id: 3,
     name: "Emily Chen",
     role: "Fashion Director",
     text: "“I’ve visited spas all over the world, but the level of personalized care and advanced aesthetic techniques here is unmatched. It’s my new sanctuary for beauty and wellness.”",
-    avatar: "/testi_avatar.png"
+    avatar: "/vixen-spa-favicon.png"
   },
   {
     id: 4,
     name: "Jessica Taylor",
     role: "Real Estate Agent",
     text: "“Incredible experience from start to finish. The chemical peel totally rejuvenated my complexion, and the staff made sure I was comfortable every step of the way.”",
-    avatar: "/testi_avatar.png"
+    avatar: "/vixen-spa-favicon.png"
   },
   {
     id: 5,
     name: "Amanda Brooks",
     role: "Creative Director",
     text: "“I am absolutely glowing. The combination of dermal fillers and the HydraFacial has taken years off my appearance while keeping it completely natural. Highly recommend!”",
-    avatar: "/testi_avatar.png"
+    avatar: "/vixen-spa-favicon.png"
   },
   {
     id: 6,
     name: "Dr. Rachel Adams",
     role: "Dermatologist",
-    text: "“As a medical professional, I am extremely selective about where I receive treatments. Relaxo MedSpa exceeds all clinical standards while providing a deeply luxurious experience.”",
-    avatar: "/testi_avatar.png"
+    text: "“As a medical professional, I am extremely selective about where I receive treatments. Vixen Spa Services exceeds all clinical standards while providing a deeply luxurious experience.”",
+    avatar: "/vixen-spa-favicon.png"
   }
 ];
 
@@ -148,7 +148,7 @@ const TestimonialSection = () => {
         {/* Right Column */}
         <div className="testi-right-col">
           <motion.img 
-            src="/testi_interior.png" 
+            src="/vixen/banners/massage-flower.jpg" 
             alt="Spa Interior" 
             className="testi-img-tall"
             initial={{ opacity: 0, scale: 1.05 }}
@@ -157,7 +157,7 @@ const TestimonialSection = () => {
             transition={{ duration: 1.2, ease: "easeOut" }}
           />
           <motion.img 
-            src="/testi_treatment.png" 
+            src="/vixen/banners/back-massage-relax.jpg" 
             alt="Spa Treatment" 
             className="testi-img-overlap"
             initial={{ opacity: 0, x: -30 }}

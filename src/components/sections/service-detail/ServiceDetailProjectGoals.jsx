@@ -5,30 +5,30 @@ const ServiceDetailProjectGoals = () => {
   const goals = [
     { 
       icon: Droplet, 
-      title: "Radiance Restoration", 
-      desc: "To restore the skin's natural brightness by improving overall luminosity and reducing signs of dullness through targeted, weekly treatments."
+      title: "Reduce Swelling & Fluid Retention",
+      desc: "To encourage healthy lymph flow and ease the swelling, bruising and fluid retention that follow cosmetic surgery."
     },
-    { 
-      icon: Sun, 
-      title: "Barrier Strength Reinforcement", 
-      desc: "To strengthen the skin barrier over time, enhancing resilience against dryness, sensitivity, and external stressors for long-lasting health."
+    {
+      icon: Sun,
+      title: "Smooth, Even Results",
+      desc: "To gently work out lumps and knots so your final contour looks smooth and natural."
     },
-    { 
-      icon: Droplets, 
-      title: "Deep Hydration Support", 
-      desc: "To deeply replenish and maintain hydration levels, ensuring the skin feels smoother and softer."
+    {
+      icon: Droplets,
+      title: "Faster, More Comfortable Healing",
+      desc: "To relieve post-op soreness and support circulation so you can return to your routine sooner."
     },
-    { 
-      icon: Leaf, 
-      title: "Sustainable Skincare Habit Building", 
-      desc: "To create a mindful, sustainable skincare routine that supports daily radiance and continues to elevate the complexion well."
+    {
+      icon: Leaf,
+      title: "Protect Your Investment",
+      desc: "To help you maintain the results of your procedure with aftercare planned around your recovery."
     }
   ];
 
   return (
     <section className="sd-project-goals-section">
       <div className="sd-pg-container">
-        <h2 className="sd-pg-title">Project Goals</h2>
+        <h2 className="sd-pg-title">Recovery Goals</h2>
         <div className="sd-pg-grid">
           {goals.map((goal, idx) => {
             const Icon = goal.icon;

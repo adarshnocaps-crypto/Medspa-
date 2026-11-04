@@ -3,32 +3,11 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { servicesData } from '../data/services';
 import '../styles/pricing.css';
-import AboutCtaBanner from '../components/sections/about/AboutCtaBanner';
 import PricingHero from '../components/sections/pricing/PricingHero';
 import PricingPlansSection from '../components/sections/pricing/PricingPlansSection';
 
-// Helper to assign dummy "Starting at" prices to treatments
-const getDummyPrice = (serviceId) => {
-  const prices = {
-    'hydrafacial': '$199',
-    'microneedling': '$299',
-    'chemical-peels': '$150',
-    'dermaplaning': '$125',
-    'botox': '$12 / unit',
-    'dermal-fillers': '$650 / syringe',
-    'lip-enhancement': '$700',
-    'kybella': '$600 / vial',
-    'laser-hair-removal': 'From $99',
-    'ipl-photofacial': '$350',
-    'skin-resurfacing': '$800',
-    'tattoo-removal': 'From $150',
-    'coolsculpting': '$750 / cycle',
-    'emsculpt': '$850 / session',
-    'skin-tightening': '$400',
-    'cellulite-reduction': '$300'
-  };
-  return prices[serviceId] || 'Varies';
-};
+// Vixen Spa Services does not publish prices; quotes are given by phone/text or at the assessment.
+const PRICE_LABEL = 'Call for pricing';
 
 const Pricing = () => {
   useEffect(() => {
@@ -51,17 +30,17 @@ const Pricing = () => {
   return (
     <div className="pricing-page">
       <Helmet>
-        <title>Pricing & Menu | MedSpa</title>
-        <meta name="description" content="View our comprehensive medspa menu and pricing for skin rejuvenation, injectables, laser treatments, and body contouring." />
+        <title>Pricing & Menu | Vixen Spa Services</title>
+        <meta name="description" content="Treatment menu for Vixen Spa Services in Beverly Hills: post-op lymphatic drainage, BBL and tummy tuck massages, body sculpting, wood therapy, vacuum therapy, cellulite massages and hyperbaric oxygen therapy. Call or text (323) 873-9014 for pricing." />
       </Helmet>
 
       {/* Hero Section */}
       <PricingHero />
 
-      {/* Pricing Plans Section */}
+      {/* Treatment Options Section */}
       <PricingPlansSection />
 
-      {/* Pricing Menu */}
+      {/* Treatment Menu */}
       <section className="pricing-menu-section">
         <motion.div
           variants={containerVariants}
@@ -81,7 +60,7 @@ const Pricing = () => {
                     </div>
                     <div className="pricing-item-dots"></div>
                     <div className="pricing-item-price">
-                      {getDummyPrice(service.id)}
+                      {PRICE_LABEL}
                     </div>
                   </div>
                 ))}
@@ -93,7 +72,7 @@ const Pricing = () => {
 
       {/* Notes Section */}
       <section className="pricing-notes-section">
-        <motion.div 
+        <motion.div
           className="pricing-notes"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -101,9 +80,9 @@ const Pricing = () => {
           transition={{ duration: 0.8 }}
         >
           <h4>Important Information</h4>
-          <p><strong>Consultations:</strong> We offer complimentary consultations for all new patients to design a personalized treatment plan.</p>
-          <p><strong>Cancellation Policy:</strong> Please provide 24 hours notice for any cancellations or rescheduling to avoid a $50 fee.</p>
-          <p><strong>Financing:</strong> We partner with Cherry and CareCredit to offer flexible payment plans. Subject to approval.</p>
+          <p><strong>Assessments:</strong> Every new client starts with an assessment so we can plan your care around your procedure and your surgeon's post-op instructions.</p>
+          <p><strong>Appointments:</strong> Sessions are by appointment only. Call or text <a href="tel:+13238739014" style={{ color: 'inherit' }}>(323) 873-9014</a> to book or to ask about pricing.</p>
+          <p><strong>Packages:</strong> Ask about multi-session recovery packages when you book.</p>
         </motion.div>
       </section>
 

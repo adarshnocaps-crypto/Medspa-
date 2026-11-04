@@ -49,10 +49,10 @@ const AboutSection = () => {
           </motion.h2>
           
           <motion.p variants={itemVariants} className="about-desc">
-            At Relaxo MedSpa, we believe true beauty begins with balance — a harmony of body, mind, and
-            spirit. Nestled in the heart of New York, our serene sanctuary offers bespoke treatments
-            crafted to renew your skin, calm your senses, and restore your natural glow. Each visit is an
-            invitation to unwind, reconnect, and rediscover your inner radiance.
+            Vixen Spa Services is led by Priscilla Martinez, a licensed massage therapist with over 12 years
+            of experience in massage and bodywork and 8 years in post-operative care. Working with many top
+            plastic surgeons in Beverly Hills through referral relationships, she combines manual lymphatic
+            drainage, body sculpting, wood therapy, vacuum therapy and hyperbaric oxygen therapy to help you heal comfortably and see your best results.
           </motion.p>
           
           <motion.div variants={itemVariants} className="about-btn-wrapper">
@@ -63,16 +63,16 @@ const AboutSection = () => {
 
           <motion.div variants={itemVariants} className="about-stats-row">
             <div className="stat-item">
-              <span className="stat-number">15K</span>
-              <span className="stat-label">Visitors</span>
+              <span className="stat-number">12+</span>
+              <span className="stat-label">Years of Bodywork</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">10+</span>
-              <span className="stat-label">Years</span>
+              <span className="stat-number">8+</span>
+              <span className="stat-label">Years Post-Op Care</span>
             </div>
             <div className="stat-item">
-              <span className="stat-number">98%</span>
-              <span className="stat-label">Positive Feedback</span>
+              <span className="stat-number" style={{ whiteSpace: 'nowrap' }}><small style={{ fontSize: '0.45em', marginRight: '0.25em' }}>Up to</small>75%</span>
+              <span className="stat-label">Faster Recovery</span>
             </div>
           </motion.div>
         </motion.div>
@@ -80,8 +80,8 @@ const AboutSection = () => {
         {/* Right Column */}
         <div className="about-right-col">
           <motion.img 
-            src="/about_main.png" 
-            alt="Spa Treatment" 
+            src="/vixen/back-massage-relax.jpg"
+            alt="Post-op lymphatic drainage massage"
             className="about-img-main"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -89,8 +89,8 @@ const AboutSection = () => {
             transition={{ duration: 1, ease: "easeOut" }}
           />
           <motion.img 
-            src="/about_overlap.png" 
-            alt="Massage Therapy" 
+            src="/vixen/face-neck-drainage.jpg"
+            alt="Face and neck lymphatic drainage"
             className="about-img-overlap"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

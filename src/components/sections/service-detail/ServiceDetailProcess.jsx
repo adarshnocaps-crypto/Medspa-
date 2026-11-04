@@ -7,18 +7,18 @@ const ServiceDetailProcess = ({ service }) => {
   const processes = [
     {
       num: '01',
-      title: 'Consultation & Preparation',
-      desc: `The journey begins with a comprehensive consultation to understand your skin goals. A gentle exfoliating cleanse is performed to prep the skin for your ${service.title} treatment.`
+      title: 'Assessment & Planning',
+      desc: `Every client starts with an assessment. We review your procedure, your surgeon's post-op instructions and your goals to plan your ${service.title} sessions.`
     },
     {
       num: '02',
-      title: `${service.title} Application`,
-      desc: `Our expert practitioners precisely administer the ${service.title} therapy, focusing on targeted areas to ensure optimal absorption and effectiveness.`
+      title: `Your ${service.title} Session`,
+      desc: `Each session is tailored to your procedure and treated areas, and Priscilla explains what she is doing and why at every step.`
     },
     {
       num: '03',
-      title: 'Restoration & Protection',
-      desc: `The final phase focuses on soothing the skin and applying medical-grade protectants to lock in results, promoting long-lasting resilience and a radiant glow.`
+      title: 'Recovery Plan & Follow-Up',
+      desc: `We recommend how many sessions you need and schedule them around your healing timeline. Ask about packages for multi-session recovery.`
     }
   ];
 

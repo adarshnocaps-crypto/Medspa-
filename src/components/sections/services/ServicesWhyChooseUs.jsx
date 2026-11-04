@@ -4,18 +4,18 @@ import { motion } from 'framer-motion';
 const features = [
   {
     id: 1,
-    title: "Premium Natural\nIngredients Only",
-    desc: "We use only the finest natural botanicals and pure essential oils to nourish your skin and elevate your well-being."
+    title: "Licensed &\nHighly Experienced",
+    desc: "Over 12 years in massage and bodywork and 8 years in post-operative care, with a sensitive, compassionate approach."
   },
   {
     id: 2,
-    title: "Tranquil Luxurious\nAtmosphere Always",
-    desc: "Our serene space is thoughtfully designed to gently calm your senses and restore deep inner peace and harmony."
+    title: "Trusted By Top\nBeverly Hills Surgeons",
+    desc: "Referral relationships with many top plastic surgeons in the Beverly Hills area, so your care fits your surgeon's plan."
   },
   {
     id: 3,
-    title: "Personalized Wellness\nJourney Experience",
-    desc: "Each treatment is thoughtfully tailored to your unique needs, helping you rediscover balance, beauty and harmony."
+    title: "Results-Driven\nRecovery Care",
+    desc: "Gentle, personalized sessions that help reduce swelling, smooth lumps and shorten your surgical recovery time."
   }
 ];
 

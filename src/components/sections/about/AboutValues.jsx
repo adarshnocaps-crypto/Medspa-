@@ -4,19 +4,19 @@ import { motion } from 'framer-motion';
 const values = [
   {
     title: "Holistic Approach",
-    desc: "We treat the whole person, addressing both physical and mental well-being to achieve true harmony."
+    desc: "We care for the whole person, easing your physical recovery while helping you feel calm and confident after surgery."
   },
   {
-    title: "Expert Practitioners",
-    desc: "Our team consists of highly trained and certified professionals dedicated to your care and safety."
+    title: "Licensed Expertise",
+    desc: "Led by licensed massage therapist Priscilla Martinez, with 12+ years of bodywork and 8 years of post-operative care."
   },
   {
-    title: "Premium Products",
-    desc: "We use only the highest quality, scientifically-backed products for all our treatments."
+    title: "Surgeon-Trusted Care",
+    desc: "We work with many top plastic surgeons in the Beverly Hills area through referral relationships."
   },
   {
     title: "Personalized Care",
-    desc: "Every treatment plan is custom-tailored to meet your specific needs and aesthetic goals."
+    desc: "Every session plan is tailored to your procedure, your body and your recovery goals."
   }
 ];
 
@@ -57,7 +57,7 @@ const AboutValues = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800" alt="Medical Aesthetic Tools" className="about-values-img" />
+        <img src="/vixen/beauty-portrait.jpg" alt="Vixen Spa Services client" className="about-values-img" />
       </motion.div>
     </section>
   );

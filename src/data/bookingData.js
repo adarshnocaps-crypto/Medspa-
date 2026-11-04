@@ -1,80 +1,71 @@
+// Booking options for Vixen Spa Services. Prices are not published, so every
+// service shows "Call for pricing" (call or text (323) 873-9014).
 export const bookingCategories = [
   {
-    id: "injectables",
-    name: "Injectables",
-    description: "Botox, Fillers, and Kybella",
-    image: "/testi_treatment.png"
+    id: "aftercare",
+    name: "Post-Op Aftercare",
+    description: "Lymphatic drainage, BBL & tummy tuck massages",
+    image: "/vixen/back-massage-relax.jpg"
   },
   {
-    id: "skin",
-    name: "Skin & Facials",
-    description: "HydraFacial, Microneedling, Peels",
-    image: "/testi_interior.png"
+    id: "sculpting",
+    name: "Body Sculpting",
+    description: "Wood therapy, vacuum therapy & cavitation",
+    image: "/vixen/leg-massage-portrait.jpg"
   },
   {
-    id: "laser",
-    name: "Laser Treatments",
-    description: "Hair Removal, Skin Resurfacing",
-    image: "/about_spa_room_1780659425526.png"
+    id: "cellulite",
+    name: "Cellulite Treatments",
+    description: "Cellulite massages & wood therapy",
+    image: "/vixen/leg-lymphatic-massage.jpg"
   },
   {
-    id: "wellness",
-    name: "Wellness & IV",
-    description: "IV Therapy, Vitamin Injections",
-    image: "/gallery_2_1780660415749.png"
+    id: "hbot",
+    name: "Hyperbaric Oxygen Therapy",
+    description: "HBOT before & after your procedure",
+    image: "/vixen/smiling-client.jpg"
   }
 ];
 
 export const bookingServices = [
-  // Injectables
-  { id: "botox", categoryId: "injectables", name: "Botox / Dysport", duration: "30 min", price: "From $12/unit" },
-  { id: "lip-filler", categoryId: "injectables", name: "Lip Filler", duration: "45 min", price: "From $650" },
-  { id: "cheek-filler", categoryId: "injectables", name: "Cheek Filler", duration: "60 min", price: "From $800" },
-  { id: "kybella", categoryId: "injectables", name: "Kybella (Fat Dissolving)", duration: "45 min", price: "From $600" },
-  
-  // Skin & Facials
-  { id: "hydrafacial", categoryId: "skin", name: "Signature HydraFacial", duration: "45 min", price: "$199" },
-  { id: "microneedling", categoryId: "skin", name: "Microneedling (SkinPen)", duration: "60 min", price: "$350" },
-  { id: "chemical-peel", categoryId: "skin", name: "VI Peel", duration: "30 min", price: "$250" },
-  { id: "dermaplaning", categoryId: "skin", name: "Dermaplaning Add-on", duration: "15 min", price: "$50" },
+  // Post-Op Aftercare
+  { id: "assessment", categoryId: "aftercare", name: "Post-Op Assessment", duration: "Recommended first visit", price: "Call for pricing" },
+  { id: "lymphatic-drainage-massage", categoryId: "aftercare", name: "Lymphatic Drainage Massage", duration: "Post-op session", price: "Call for pricing" },
+  { id: "bbl-aftercare", categoryId: "aftercare", name: "BBL Massage & Aftercare", duration: "After BBL & fat transfer", price: "Call for pricing" },
+  { id: "tummy-tuck-massage", categoryId: "aftercare", name: "Tummy Tuck Massage", duration: "After a tummy tuck", price: "Call for pricing" },
+  { id: "liposuction-aftercare", categoryId: "aftercare", name: "Liposuction Aftercare", duration: "After liposuction", price: "Call for pricing" },
+  { id: "mommy-makeover-aftercare", categoryId: "aftercare", name: "Mommy Makeover Aftercare", duration: "After a mommy makeover", price: "Call for pricing" },
+  { id: "face-neck-drainage", categoryId: "aftercare", name: "Face, Chin & Neck Drainage", duration: "Focused facial session", price: "Call for pricing" },
+  { id: "recovery-package", categoryId: "aftercare", name: "Recovery Package", duration: "Multiple sessions", price: "Call for pricing" },
 
-  // Laser
-  { id: "laser-hair", categoryId: "laser", name: "Laser Hair Removal (Small Area)", duration: "15 min", price: "$99" },
-  { id: "ipl", categoryId: "laser", name: "IPL Photofacial", duration: "45 min", price: "$350" },
-  { id: "resurfacing", categoryId: "laser", name: "Laser Skin Resurfacing", duration: "60 min", price: "$800" },
+  // Body Sculpting
+  { id: "body-sculpting", categoryId: "sculpting", name: "Body Sculpting", duration: "Non-surgical contouring", price: "Call for pricing" },
+  { id: "wood-therapy", categoryId: "sculpting", name: "Wood Therapy", duration: "Body contouring massage", price: "Call for pricing" },
+  { id: "vacuum-therapy", categoryId: "sculpting", name: "Vacuum Therapy", duration: "Lift & tone", price: "Call for pricing" },
+  { id: "cavitation-lipo", categoryId: "sculpting", name: "Cavitation Lipo", duration: "Non-surgical", price: "Call for pricing" },
 
-  // Wellness
-  { id: "iv-hydration", categoryId: "wellness", name: "Signature IV Hydration", duration: "45 min", price: "$150" },
-  { id: "b12-shot", categoryId: "wellness", name: "B12 Injection", duration: "10 min", price: "$35" }
+  // Cellulite Treatments
+  { id: "cellulite-massage", categoryId: "cellulite", name: "Cellulite Massage", duration: "Targeted areas", price: "Call for pricing" },
+  { id: "wood-therapy-cellulite", categoryId: "cellulite", name: "Wood Therapy – Cellulite", duration: "Targeted areas", price: "Call for pricing" },
+
+  // Hyperbaric Oxygen Therapy
+  { id: "hbot-pre-op", categoryId: "hbot", name: "HBOT – Before Surgery", duration: "Before your procedure", price: "Call for pricing" },
+  { id: "hbot-post-op", categoryId: "hbot", name: "HBOT – After Surgery", duration: "After your procedure", price: "Call for pricing" }
 ];
 
 export const bookingProviders = [
   {
-    id: "provider-1",
-    name: "Dr. Sarah Jenkins",
-    title: "Medical Director / Master Injector",
-    image: "/doctor_placeholder.png",
-    availableServices: ["botox", "lip-filler", "cheek-filler", "kybella"]
-  },
-  {
-    id: "provider-2",
-    name: "Alyssa Martinez",
-    title: "Nurse Practitioner (NP-C)",
-    image: "/avatar_2.png",
-    availableServices: ["botox", "lip-filler", "cheek-filler", "kybella", "iv-hydration", "b12-shot"]
-  },
-  {
-    id: "provider-3",
-    name: "Jessica Lee",
-    title: "Lead Esthetician",
-    image: "/avatar_3.png",
-    availableServices: ["hydrafacial", "microneedling", "chemical-peel", "dermaplaning", "laser-hair", "ipl", "resurfacing"]
+    id: "priscilla-martinez",
+    name: "Priscilla Martinez",
+    title: "Founder & Licensed Massage Therapist",
+    image: "/vixen-spa-favicon.png",
+    availableServices: ["all"]
   },
   {
     id: "first-available",
-    name: "First Available Provider",
-    title: "Any qualified staff member",
-    image: "/doctor_placeholder.png",
+    name: "First Available Therapist",
+    title: "Next available licensed therapist",
+    image: "/vixen-spa-favicon.png",
     availableServices: ["all"] // Special case
   }
 ];
@@ -83,8 +74,8 @@ export const generateAvailableTimes = () => {
   const times = [];
   let time = new Date();
   time.setHours(9, 0, 0, 0); // Start at 9 AM
-  
-  while (time.getHours() < 17) { // End at 5 PM
+
+  while (time.getHours() < 20) { // Last slot 7:30 PM (open until 9 PM, by appointment)
     times.push(time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     time.setMinutes(time.getMinutes() + 30);
   }

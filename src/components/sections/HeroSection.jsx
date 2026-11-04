@@ -20,15 +20,15 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="hero-main-subtitle"
           >
-            Advanced Aesthetics & MedSpa Clinic
+            Post Cosmetic Surgical Care
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Discover the perfect harmony of science and serenity. Our expert practitioners deliver bespoke treatments that rejuvenate your skin, restore your confidence, and reveal the most radiant version of you.
+            Healing after cosmetic surgery, with manual lymphatic drainage and hyperbaric oxygen therapy. Our licensed therapists help reduce swelling, bruising and recovery time so you can enjoy the results you deserve.
           </motion.p>
 
           <motion.div
@@ -38,7 +38,7 @@ const HeroSection = () => {
             className="hero-btn-group"
           >
             <Link to="/book-appointment" className="btn btn-primary" style={{ backgroundColor: 'var(--primary-color)', color: 'var(--body-bg-color)', border: 'none' }}>
-              Book Consultation
+              Schedule an Assessment
             </Link>
             <Link to="/services" className="btn btn-outline" style={{ display: 'inline-flex', gap: '10px' }}>
               Explore Services <ArrowRight size={18} />
@@ -53,11 +53,11 @@ const HeroSection = () => {
           >
             <div className="contact-item">
               <span className="contact-label">Call Us</span>
-              <a href="tel:+1234567890">+1 (234) 567-890</a>
+              <a href="tel:+13238739014">(323) 873-9014</a>
             </div>
             <div className="contact-item">
               <span className="contact-label">Location</span>
-              <p>128 Madison Ave, NY</p>
+              <p>337 S Beverly Dr, Beverly Hills, CA</p>
             </div>
           </motion.div>
         </div>
@@ -73,24 +73,24 @@ const HeroSection = () => {
             transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
           >
             <h1 className="massive-title" style={{ padding: '0 5%' }}>
-              Elevate Your<br/>Natural Beauty
+              Heal Faster,<br/>Feel Beautiful
             </h1>
           </motion.div>
-          
+
           <div className="hero-features-bar">
             <div className="feature-item">
-              <h4>BOTOX & FILLERS</h4>
-              <p>Smooth wrinkles and restore youthful volume instantly.</p>
+              <h4>LYMPHATIC DRAINAGE</h4>
+              <p>Gentle post-op massage that eases swelling and fluid retention.</p>
             </div>
             <div className="feature-divider"></div>
             <div className="feature-item">
-              <h4>LASER TREATMENTS</h4>
-              <p>Advanced FDA-approved laser technology for skin perfection.</p>
+              <h4>BODY SCULPTING</h4>
+              <p>Wood therapy, vacuum therapy and cellulite massages to contour your shape.</p>
             </div>
             <div className="feature-divider"></div>
             <div className="feature-item">
-              <h4>BODY CONTOURING</h4>
-              <p>Sculpt and define your physique with non-invasive therapies.</p>
+              <h4>BBL & TUMMY TUCK CARE</h4>
+              <p>Expert massages and aftercare after BBL, tummy tuck and lipo.</p>
             </div>
           </div>
         </div>

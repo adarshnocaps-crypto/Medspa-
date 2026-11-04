@@ -1,6 +1,6 @@
 /* Blog Subtitle */
 .blog-subtitle {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -63,7 +63,7 @@
 }
 
 .blog-post-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -105,7 +105,7 @@
   background-color: transparent;
   border: 1px solid rgba(88, 94, 72, 0.2);
   color: var(--primary-color);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -150,14 +150,14 @@
   border: none;
   background: transparent;
   outline: none;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   color: var(--primary-color);
   font-size: 0.95rem;
 }
 
 .sidebar-search input::placeholder {
   color: rgba(88, 94, 72, 0.5);
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.1rem;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .widget-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -230,7 +230,7 @@
 }
 
 .popular-info h5 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-weight: 600;
   color: var(--primary-color);
   font-size: 1rem;

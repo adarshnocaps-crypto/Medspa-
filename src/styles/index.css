@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=melodrama@400,500,600,700,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
 @import './variables.css';
 @import './typography.css';
@@ -55,7 +55,7 @@ a[class*="btn"]:active {
 }
 
 body {
-  font-family: 'Open Sans', 'Inter', sans-serif;
+  font-family: var(--font-primary);
   color: var(--text-color);
   background-color: var(--body-bg-color);
   line-height: 1.6;
@@ -110,7 +110,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--body-bg-color);
+  background-color: #585e48;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -118,6 +118,6 @@ body {
 }
 
 .preloader-logo {
-  max-width: 140px;
+  max-width: 190px;
   height: auto;
 }

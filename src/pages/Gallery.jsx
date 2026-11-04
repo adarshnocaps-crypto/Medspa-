@@ -20,15 +20,15 @@ const Gallery = () => {
   return (
     <div className="gallery-page">
       <Helmet>
-        <title>Our Gallery | MedSpa Results</title>
-        <meta name="description" content="View our stunning before and after results organized by treatment type." />
+        <title>Our Gallery | Vixen Spa Services</title>
+        <meta name="description" content="Real photos from Vixen Spa Services' Yelp page: neck and face recovery, tummy tuck recovery, red light therapy and training." />
       </Helmet>
 
       {/* Hero Section */}
       <section className="about-hero-container">
         <div 
           className="about-hero-banner" 
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1920&h=1080')` }}
+          style={{ backgroundImage: `url('/yelp/shoulder-massage.jpg')` }}
         >
           <div className="about-hero-overlay"></div>
           <motion.h1 
@@ -57,7 +57,7 @@ const Gallery = () => {
             <div className="vertical-line"></div>
             <p className="breadcrumbs">Home &gt; Gallery</p>
             <p className="about-hero-desc">
-              Explore our real results. Select a treatment below to view before & after transformations and our dedicated galleries.
+              Real photos from our Yelp page. Select a category below to view its gallery.
             </p>
           </motion.div>
         </div>
@@ -78,7 +78,13 @@ const Gallery = () => {
               >
                 <Link to={`/gallery/${cat.id}`} className="gc-card-link">
                   <div className="gc-img-wrapper">
-                    <img src={cat.thumbnail} alt={cat.title} />
+                    {cat.mosaic ? (
+                      <div className={`gc-mosaic ${cat.mosaic.length <= 3 ? 'gc-mosaic--row' : cat.mosaic.length === 4 ? 'gc-mosaic--two' : ''}`}>
+                        {cat.mosaic.map((src) => <img key={src} src={src} alt="" />)}
+                      </div>
+                    ) : (
+                      <img src={cat.thumbnail} alt={cat.title} />
+                    )}
                     <div className="gc-overlay">
                       <span>View Gallery <ArrowRight size={18} /></span>
                     </div>

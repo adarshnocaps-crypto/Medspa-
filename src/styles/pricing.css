@@ -24,7 +24,7 @@
 }
 
 .pricing-hero-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 4rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -51,7 +51,7 @@
 }
 
 .pricing-category-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 2.5rem;
@@ -104,7 +104,7 @@
 }
 
 .pricing-item-price {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   color: var(--primary-color);
   background-color: var(--body-bg-color);
@@ -133,7 +133,7 @@
 }
 
 .pricing-notes h4 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   color: var(--primary-color);
   margin-bottom: 1.5rem;

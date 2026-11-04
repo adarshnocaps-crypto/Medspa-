@@ -24,7 +24,7 @@
 }
 
 .blog-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -81,7 +81,7 @@
 }
 
 .blog-card-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--primary-color);

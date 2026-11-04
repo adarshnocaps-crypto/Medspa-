@@ -28,7 +28,7 @@
 }
 
 .booking-main-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -136,7 +136,7 @@
 }
 
 .step-header h3 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -197,7 +197,7 @@
 }
 
 .card-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.4rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -236,7 +236,7 @@
 }
 
 .service-info h4 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.3rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -328,7 +328,7 @@
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
@@ -370,7 +370,7 @@
 }
 
 .summary-value {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   color: var(--primary-color);
   font-weight: 600;

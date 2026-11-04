@@ -15,7 +15,7 @@ const ServiceDetailAftercare = () => {
         </div>
       </div>
       <div className="sd-ac-right">
-        <img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&q=80&w=800" alt="Aftercare" className="sd-ac-img" />
+        <img src="/vixen/head-massage.jpg" alt="Aftercare" className="sd-ac-img" />
       </div>
     </section>
   );

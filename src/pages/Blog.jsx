@@ -20,7 +20,7 @@ const Blog = () => {
   return (
     <div className="blog-page">
       <Helmet>
-        <title>Blog | MedSpa</title>
+        <title>Blog | Vixen Spa Services</title>
         <meta name="description" content="Discover our beauty blog with the latest tips on skincare, body care, and spa treatments." />
       </Helmet>
 
@@ -28,7 +28,7 @@ const Blog = () => {
       <section className="about-hero-container">
         <div 
           className="about-hero-banner" 
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=1920&h=1080')` }}
+          style={{ backgroundImage: `url('/vixen/banners/therapist-back-massage.jpg')` }}
         >
           <div className="about-hero-overlay"></div>
           <motion.h1 

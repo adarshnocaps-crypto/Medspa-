@@ -231,7 +231,7 @@ const BookingSection = ({ preselectedService = null, showHeader = true }) => {
 
                 {formData.date && (
                   <div>
-                    <h4 style={{ fontFamily: 'Melodrama, serif', fontSize: '1.5rem', color: 'var(--primary-color)' }}>Available Times for {formData.date}</h4>
+                    <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', color: 'var(--primary-color)' }}>Available Times for {formData.date}</h4>
                     <div className="calendar-grid">
                       {availableTimes.map(time => (
                         <div 

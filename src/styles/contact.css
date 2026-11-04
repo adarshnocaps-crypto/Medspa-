@@ -22,7 +22,7 @@
 }
 
 .contact-title-col h1 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 8rem;
   font-weight: 600;
   color: #000;
@@ -84,7 +84,7 @@
   border-bottom: 1px solid rgba(88, 94, 72, 0.2);
   background: transparent;
   padding: 0.5rem 0;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 0.95rem;
   color: var(--primary-color);
   outline: none;
@@ -110,7 +110,7 @@ textarea.form-input {
   background-color: var(--primary-color);
   color: #fff;
   border: none;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 0.95rem;
   cursor: pointer;
   transition: opacity 0.3s ease;
@@ -174,7 +174,7 @@ textarea.form-input {
 }
 
 .info-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 1.1rem;
   font-weight: 600;
   color: #000;
@@ -218,4 +218,10 @@ textarea.form-input {
     width: 100%;
     margin-top: 1rem;
   }
+}
+
+/* Montserrat is wider than the old display font: keep the page title from pushing the form off-screen */
+.contact-title-col h1 {
+  font-size: clamp(3rem, 6.5vw, 5.5rem);
+  line-height: 1.05;
 }

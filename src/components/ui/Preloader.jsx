@@ -9,8 +9,8 @@ const Preloader = () => {
       exit={{ opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } }}
     >
       <motion.img 
-        src="/logo.png" 
-        alt="MedSpa Logo" 
+        src="/vixen-spa-logo.png"
+        alt="Vixen Spa Services"
         className="preloader-logo"
         initial={{ scale: 0.95, opacity: 0.5 }}
         animate={{ scale: 1.02, opacity: 1 }}

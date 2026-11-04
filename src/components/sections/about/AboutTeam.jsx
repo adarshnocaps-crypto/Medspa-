@@ -5,29 +5,29 @@ const teamMembers = [
   {
     name: "Dr. Sarah Jenkins",
     title: "Medical Director",
-    img: "/about_founder_1780659592213.png" // using founder image as placeholder
+    img: "/vixen-spa-logo.png" // using founder image as placeholder
   },
   {
     name: "Emily Chen",
     title: "Lead Esthetician",
-    img: "/about_founder_1780659592213.png"
+    img: "/vixen-spa-logo.png"
   },
   {
     name: "Michael Torres",
     title: "Massage Therapist",
-    img: "/about_founder_1780659592213.png"
+    img: "/vixen-spa-logo.png"
   },
   {
     name: "Jessica Albas",
     title: "Client Care Coordinator",
-    img: "/about_founder_1780659592213.png"
+    img: "/vixen-spa-logo.png"
   }
 ];
 
 const AboutTeam = () => {
   return (
     <section className="team-section">
-      <h3 style={{ fontFamily: "'Melodrama', serif", fontSize: '2.5rem', color: 'var(--primary-color)' }}>MEET OUR EXPERT TEAM</h3>
+      <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', color: 'var(--primary-color)' }}>MEET OUR EXPERT TEAM</h3>
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <motion.div 

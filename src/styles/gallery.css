@@ -18,7 +18,7 @@
 }
 
 .gallery-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -168,7 +168,7 @@
 
 .gc-overlay span {
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -185,7 +185,7 @@
 }
 
 .gc-content h3 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.5rem;
   color: var(--primary-color);
   margin-bottom: 0.5rem;
@@ -212,4 +212,39 @@
   .gc-content h3 {
     font-size: 2rem;
   }
+}
+
+/* Category card showing several small photos at their native size */
+.gc-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Few photos: show them as a centered row of squares instead of cropping tall slices */
+.gc-mosaic--row {
+  background: var(--primary-color);
+  align-content: center;
+  grid-auto-rows: auto;
+}
+
+.gc-mosaic--row img {
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+/* Four photos: 2x2 grid */
+.gc-mosaic--two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gc-mosaic--two {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.gc-mosaic:not(.gc-mosaic--row) img {
+  min-height: 0;
 }

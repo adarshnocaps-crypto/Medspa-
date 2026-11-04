@@ -1,87 +1,62 @@
+// Gallery categories for Vixen Spa Services.
+// REAL photos only: every image comes from the business's Yelp page (saved in /public/yelp).
+// The Yelp photos are small (348px), so banners show them at their native shape and the
+// category cards use a mosaic of several photos.
 export const treatmentCategories = [
   {
-    id: 'injectables',
-    title: 'Injectables & Fillers',
-    description: 'Restore volume and smooth wrinkles with our advanced injectables.',
-    thumbnail: '/about_hero_1780659414031.png',
-    beforeAfter: [
-      {
-        id: 'ba-inj-1',
-        title: 'Lip Enhancement',
-        before: '/gallery_1_1780660396697.png',
-        after: '/about_overlap_img_1780649975738.png',
-      },
-      {
-        id: 'ba-inj-2',
-        title: 'Cheek Contouring',
-        before: '/about_main_img_1780649962307.png',
-        after: '/lip_enhancement.png',
-      }
-    ],
+    id: 'neck-and-face-recovery',
+    title: 'Neck & Face Recovery',
+    description: 'Lymphatic drainage sessions for the neck, chin and shoulders after surgery.',
+    thumbnail: '/yelp/neck-recovery.jpg',
+    heroImage: '/yelp/neck-recovery.jpg',
+    mosaic: ['/yelp/neck-recovery.jpg', '/yelp/all-in-1-massage.jpg', '/yelp/neck-results.jpg', '/yelp/shoulder-massage.jpg'],
+    beforeAfter: [],
     galleryImages: [
-      { id: 'gal-inj-1', src: '/gallery_1_1780660396697.png', alt: 'Injectable Treatment', type: 'tall' },
-      { id: 'gal-inj-2', src: '/gallery_2_1780660415749.png', alt: 'Dermal Fillers', type: 'medium' },
-      { id: 'gal-inj-3', src: '/about_main_img_1780649962307.png', alt: 'Clinic Injectables', type: 'tall' },
-      { id: 'gal-inj-4', src: '/lip_enhancement.png', alt: 'Patient Profile', type: 'short' },
+      { id: 'gal-neck-1', src: '/yelp/neck-recovery.jpg', alt: 'Neck recovery session', type: 'medium' },
+      { id: 'gal-neck-2', src: '/yelp/all-in-1-massage.jpg', alt: 'All-in-1 massage neck results', type: 'medium' },
+      { id: 'gal-neck-3', src: '/yelp/neck-results.jpg', alt: 'Neck lymphatic drainage session', type: 'medium' },
+      { id: 'gal-neck-4', src: '/yelp/shoulder-massage.jpg', alt: 'Shoulder and neck lymphatic massage', type: 'medium' },
     ]
   },
   {
-    id: 'laser-treatments',
-    title: 'Laser Treatments',
-    description: 'Achieve flawless skin with state-of-the-art laser resurfacing and hair removal.',
-    thumbnail: '/gallery_4_1780660440917.png',
-    beforeAfter: [
-      {
-        id: 'ba-las-1',
-        title: 'Skin Resurfacing',
-        before: '/testi_interior.png',
-        after: '/gallery_5_1780660454668.png',
-      }
-    ],
+    id: 'tummy-tuck-recovery',
+    title: 'Tummy Tuck Recovery',
+    description: 'Post-op massage and aftercare sessions after a tummy tuck.',
+    thumbnail: '/yelp/tummy-tuck-healed.jpg',
+    heroImage: '/yelp/tummy-tuck-healed.jpg',
+    mosaic: ['/yelp/tummy-tuck-marked.jpg', '/yelp/tummy-tuck-healed.jpg', '/yelp/client-hallway.jpg'],
+    beforeAfter: [],
     galleryImages: [
-      { id: 'gal-las-1', src: '/gallery_4_1780660440917.png', alt: 'Laser Prep', type: 'tall' },
-      { id: 'gal-las-2', src: '/about_overlap.png', alt: 'Laser Device', type: 'medium' },
-      { id: 'gal-las-3', src: '/gallery_6_1780660467909.png', alt: 'Treatment Room', type: 'short' },
-      { id: 'gal-las-4', src: '/about_main.png', alt: 'Clear Skin', type: 'tall' },
+      { id: 'gal-tt-1', src: '/yelp/tummy-tuck-marked.jpg', alt: 'Tummy tuck aftercare session', type: 'medium' },
+      { id: 'gal-tt-2', src: '/yelp/tummy-tuck-healed.jpg', alt: 'Tummy tuck recovery', type: 'medium' },
+      { id: 'gal-tt-3', src: '/yelp/client-hallway.jpg', alt: 'Client after body sculpting', type: 'medium' },
     ]
   },
   {
-    id: 'facials-skincare',
-    title: 'Facials & Skincare',
-    description: 'Nourish and rejuvenate your skin with our customized spa facials.',
-    thumbnail: '/testi_treatment.png',
-    beforeAfter: [
-      {
-        id: 'ba-fac-1',
-        title: 'HydraFacial Glow',
-        before: '/gallery_2_1780660415749.png',
-        after: '/about_spa_room_1780659425526.png',
-      }
-    ],
+    id: 'red-light-therapy',
+    title: 'Red Light & Body Sculpting',
+    description: 'Red light therapy and body sculpting sessions in our Beverly Hills studio.',
+    thumbnail: '/yelp/red-light-belly.jpg',
+    heroImage: '/yelp/red-light-belly.jpg',
+    mosaic: ['/yelp/red-light-belly.jpg', '/yelp/red-light-session.jpg'],
+    beforeAfter: [],
     galleryImages: [
-      { id: 'gal-fac-1', src: '/gallery_2_1780660415749.png', alt: 'Skincare Products', type: 'tall' },
-      { id: 'gal-fac-2', src: '/testi_treatment.png', alt: 'Facial Massage', type: 'medium' },
-      { id: 'gal-fac-3', src: '/gallery_5_1780660454668.png', alt: 'Spa Towels', type: 'short' },
-      { id: 'gal-fac-4', src: '/gallery_1_1780660396697.png', alt: 'Treatment Bed', type: 'medium' },
+      { id: 'gal-rl-1', src: '/yelp/red-light-belly.jpg', alt: 'Red light therapy session', type: 'medium' },
+      { id: 'gal-rl-2', src: '/yelp/red-light-session.jpg', alt: 'Red light and body sculpting session', type: 'medium' },
     ]
   },
   {
-    id: 'body-contouring',
-    title: 'Body Contouring',
-    description: 'Sculpt your physique with non-invasive fat reduction and skin tightening.',
-    thumbnail: '/gallery_3_1780660429401.png',
-    beforeAfter: [
-      {
-        id: 'ba-bod-1',
-        title: 'CoolSculpting',
-        before: '/gallery_3_1780660429401.png',
-        after: '/testi_treatment.png',
-      }
-    ],
+    id: 'training-and-team',
+    title: 'Training & Team',
+    description: 'Body sculpting training certificates and the team behind Vixen Spa Services.',
+    thumbnail: '/yelp/certificate.jpg',
+    heroImage: '/yelp/team-scrubs.jpg',
+    mosaic: ['/yelp/certificate.jpg', '/yelp/training-letter.jpg', '/yelp/team-scrubs.jpg'],
+    beforeAfter: [],
     galleryImages: [
-      { id: 'gal-bod-1', src: '/about_spa_room_1780659425526.png', alt: 'Body Contouring Massage', type: 'tall' },
-      { id: 'gal-bod-2', src: '/gallery_3_1780660429401.png', alt: 'Waiting Area', type: 'short' },
-      { id: 'gal-bod-3', src: '/gallery_6_1780660467909.png', alt: 'Hallway', type: 'medium' },
+      { id: 'gal-trn-1', src: '/yelp/certificate.jpg', alt: 'Body sculpting certificate of completion', type: 'medium' },
+      { id: 'gal-trn-2', src: '/yelp/training-letter.jpg', alt: 'Training academy welcome letter', type: 'medium' },
+      { id: 'gal-trn-3', src: '/yelp/team-scrubs.jpg', alt: 'Vixen Spa Services team member in branded scrubs', type: 'medium' },
     ]
   }
 ];

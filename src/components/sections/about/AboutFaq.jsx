@@ -5,19 +5,19 @@ import { Plus, Minus, ArrowUpRight } from 'lucide-react';
 const faqs = [
   {
     question: "Do I Need To Book An Appointment In Advance?",
-    answer: "Yes, we highly recommend scheduling your appointment at least 24 hours in advance to ensure your preferred time and therapist are available."
+    answer: "Yes. All sessions are by appointment only. Call or text (323) 873-9014 to schedule your assessment."
   },
   {
-    question: "What Should I Wear During My Treatment?",
-    answer: "Please wear comfortable clothing. We provide robes and slippers for your comfort during your visit."
+    question: "When Can I Start After My Surgery?",
+    answer: "Always follow your surgeon's guidance on timing. At your assessment we plan your sessions around your procedure and your surgeon's post-op instructions."
   },
   {
-    question: "Can I Customize My Treatment?",
-    answer: "Absolutely. Our expert practitioners will work with you during your consultation to customize any treatment to your specific needs."
+    question: "How Many Sessions Will I Need?",
+    answer: "It depends on your procedure and how your body heals. We recommend a plan at your assessment, and packages are available for multi-session recovery."
   },
   {
-    question: "What If I'm Late Or Need To Cancel?",
-    answer: "We require a 24-hour notice for cancellations. Late arrivals may result in a shortened treatment time."
+    question: "Do You Also Offer Hyperbaric Oxygen Therapy?",
+    answer: "Yes. HBOT can be scheduled before and after your procedure, and pairs with lymphatic drainage massage to help reduce your recovery time."
   }
 ];
 
@@ -29,7 +29,7 @@ const AboutFaq = () => {
       
       {/* Left Column: FAQs */}
       <div className="faq-left" style={{ paddingTop: '2rem' }}>
-        <h2 style={{ fontFamily: "'Melodrama', serif", fontSize: '4rem', color: 'var(--primary-color)', fontWeight: 300, marginBottom: '3rem', letterSpacing: '1px' }}>
+        <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '4rem', color: 'var(--primary-color)', fontWeight: 300, marginBottom: '3rem', letterSpacing: '1px' }}>
           FAQs
         </h2>
         
@@ -42,7 +42,7 @@ const AboutFaq = () => {
               style={{ borderBottom: '1px solid rgba(88, 94, 72, 0.2)', padding: '1.5rem 0', cursor: 'pointer' }}
             >
               <div className="faq-question" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontFamily: "'Melodrama', serif", fontSize: '1.5rem', color: 'var(--primary-color)', fontWeight: 400 }}>
+                <span style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', color: 'var(--primary-color)', fontWeight: 400 }}>
                   {index + 1}. {faq.question}
                 </span>
                 <span style={{ color: 'rgba(88, 94, 72, 0.5)' }}>
@@ -79,8 +79,8 @@ const AboutFaq = () => {
         style={{ position: 'relative', display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end', paddingBottom: '2rem' }}
       >
         <img 
-          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800" 
-          alt="FAQ" 
+          src="/vixen/banners/licensed-therapist.jpg" 
+          alt="Post-op massage session" 
           style={{ width: '85%', height: '600px', objectFit: 'cover', borderTopLeftRadius: '250px' }} 
         />
         
@@ -95,7 +95,7 @@ const AboutFaq = () => {
           flexDirection: 'column',
           gap: '3rem'
         }}>
-          <h3 style={{ fontFamily: "'Melodrama', serif", fontSize: '2rem', color: '#fff', fontWeight: 300, lineHeight: 1.3 }}>
+          <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#fff', fontWeight: 300, lineHeight: 1.3 }}>
             Got A Question?<br/>Ask Away
           </h3>
           

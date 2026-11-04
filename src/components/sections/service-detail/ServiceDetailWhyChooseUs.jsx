@@ -27,8 +27,8 @@ const ServiceDetailWhyChooseUs = () => {
               <span className="sd-wcu-number">01</span>
               <span className="sd-wcu-line"></span>
             </div>
-            <h3 className="sd-wcu-title">Expert Practitioners</h3>
-            <p className="sd-wcu-desc">Our team consists of highly trained and certified professionals committed to your safety and satisfaction.</p>
+            <h3 className="sd-wcu-title">Licensed &amp; Experienced</h3>
+            <p className="sd-wcu-desc">Over 12 years in massage and bodywork and 8 years in post-operative care, led by Priscilla Martinez.</p>
           </motion.div>
           <motion.div 
             className="sd-wcu-item"
@@ -42,8 +42,8 @@ const ServiceDetailWhyChooseUs = () => {
               <span className="sd-wcu-number">02</span>
               <span className="sd-wcu-line"></span>
             </div>
-            <h3 className="sd-wcu-title">Advanced Technology</h3>
-            <p className="sd-wcu-desc">We use the latest FDA-approved equipment and premium products for optimal, long-lasting results.</p>
+            <h3 className="sd-wcu-title">Trusted by Surgeons</h3>
+            <p className="sd-wcu-desc">Referral relationships with many top plastic surgeons in the Beverly Hills area.</p>
           </motion.div>
           <motion.div 
             className="sd-wcu-item"
@@ -58,7 +58,7 @@ const ServiceDetailWhyChooseUs = () => {
               <span className="sd-wcu-line"></span>
             </div>
             <h3 className="sd-wcu-title">Personalized Care</h3>
-            <p className="sd-wcu-desc">Every treatment is tailored to your unique skin and body needs, ensuring a fully customized experience.</p>
+            <p className="sd-wcu-desc">Every session is tailored to your procedure, your body and your recovery goals.</p>
           </motion.div>
         </div>
       </div>

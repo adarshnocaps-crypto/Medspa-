@@ -28,7 +28,7 @@
 }
 
 .sd-hero-title-centered {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 7rem;
   color: #fff;
   font-weight: 600;
@@ -70,7 +70,7 @@
 }
 
 .breadcrumbs {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -115,7 +115,7 @@
 }
 
 .sd-overview-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -211,7 +211,7 @@
 }
 
 .sd-benefit-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -242,7 +242,7 @@
 }
 
 .sd-wcu-header h2 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 4rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -269,7 +269,7 @@
 }
 
 .sd-wcu-number {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   color: var(--secondary-color);
   margin: 0 1rem;
@@ -282,7 +282,7 @@
 }
 
 .sd-wcu-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -323,7 +323,7 @@
 }
 
 .sd-aftercare-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -356,7 +356,7 @@
 }
 
 .sd-ac-content h4 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.4rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -408,7 +408,7 @@
 }
 
 .sd-po-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -454,7 +454,7 @@
 }
 
 .sd-pg-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -498,7 +498,7 @@
 }
 
 .sd-pg-content h4 {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -523,7 +523,7 @@
 }
 
 .sd-process-main-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -556,14 +556,14 @@
 }
 
 .sd-process-num {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   color: var(--primary-color);
   margin: 0 1rem;
 }
 
 .sd-process-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.8rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -593,7 +593,7 @@
 }
 
 .sd-faq-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.8rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -674,7 +674,7 @@
 }
 
 .sd-faq-form-title {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -707,7 +707,7 @@
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-primary);
   font-size: 0.95rem;
   outline: none;
   transition: all 0.3s ease;
@@ -768,5 +768,72 @@
   }
   .sd-hero-title-centered {
     font-size: 4rem;
+  }
+}
+
+
+/* Service banner sized to the photo (see about.css) */
+.sd-hero-banner {
+  height: 520px;
+  min-height: 0;
+  background-color: var(--primary-color);
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  justify-content: flex-start;
+  padding: 0 5%;
+}
+
+.sd-hero-overlay {
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-color) calc(100% - 900px), rgba(88, 94, 72, 0) calc(100% - 640px));
+}
+
+.sd-hero-title-centered {
+  max-width: 52%;
+  text-align: left;
+  font-size: clamp(2rem, 4.4vw, 3.8rem);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+@media (max-width: 900px) {
+  .sd-hero-banner {
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+  }
+  .sd-hero-overlay {
+    background: rgba(88, 94, 72, 0.8);
+  }
+  .sd-hero-title-centered {
+    max-width: 100%;
+    text-align: center;
+    font-size: clamp(1.7rem, 7.5vw, 2.4rem);
+  }
+}
+
+/* Keep the title clear of the photo */
+.sd-hero-title-centered {
+  max-width: max(320px, calc(100% - 860px));
+  font-size: clamp(1.8rem, 3.4vw, 3.4rem);
+}
+
+@media (max-width: 1200px) {
+  .sd-hero-banner {
+    height: 340px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+  }
+  .sd-hero-overlay {
+    background: rgba(88, 94, 72, 0.8);
+  }
+  .sd-hero-title-centered {
+    max-width: 100%;
+    text-align: center;
+    font-size: clamp(1.7rem, 6vw, 2.6rem);
   }
 }

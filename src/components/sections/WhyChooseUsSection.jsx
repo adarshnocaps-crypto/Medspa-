@@ -6,38 +6,38 @@ const features = [
   {
     id: 1,
     icon: Leaf,
-    title: "Premium Natural\nIngredients Only",
-    desc: "We use only the finest natural botanicals and pure essential oils to nourish your skin and elevate your well-being."
+    title: "Licensed &\nHighly Experienced",
+    desc: "Priscilla Martinez is a licensed massage therapist with over 12 years in massage and bodywork and 8 years in post-operative care."
   },
   {
     id: 2,
-    icon: Flower,
-    title: "Tranquil Luxurious\nAtmosphere Always",
-    desc: "Our serene space is thoughtfully designed to gently calm your senses and restore deep inner peace and harmony."
+    icon: Heart,
+    title: "Trusted By Top\nBeverly Hills Surgeons",
+    desc: "Works with many top plastic surgeons in the Beverly Hills area through referral relationships, and with many high-profile clients."
   },
   {
     id: 3,
     icon: Droplet,
-    title: "Personalized Wellness\nJourney Experience",
-    desc: "Each treatment is thoughtfully tailored to your unique needs, helping you rediscover balance, beauty and harmony."
+    title: "Gentle, Painless\nTechnique",
+    desc: "Clients describe her sessions as gentle, unrushed and painless, even on sensitive post-op areas."
   },
   {
     id: 4,
-    icon: Heart,
-    title: "Expert Medical\nProfessionals",
-    desc: "Our certified specialists combine artistic vision with advanced medical expertise to deliver safe, stunning results."
+    icon: Zap,
+    title: "Faster Surgical\nRecovery",
+    desc: "Lymphatic drainage massage and hyperbaric oxygen therapy can reduce recovery time after plastic surgery by up to 75%."
   },
   {
     id: 5,
-    icon: Zap,
-    title: "State-Of-The-Art\nTechnology",
-    desc: "We utilize the latest FDA-approved aesthetic technologies to ensure the highest standards of safety and efficacy."
+    icon: Flower,
+    title: "Signature\nTechniques",
+    desc: "Known for patent-pending massage techniques, including wood therapy and vacuum therapy for body sculpting."
   },
   {
     id: 6,
     icon: Sun,
-    title: "Holistic Mind &\nBody Approach",
-    desc: "We believe true beauty radiates from within, focusing on treatments that nurture both your physical and mental well-being."
+    title: "Personal Attention\nEvery Session",
+    desc: "She explains what she is doing and why, and builds every session around your procedure and your recovery goals."
   }
 ];
 

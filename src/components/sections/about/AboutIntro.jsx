@@ -12,7 +12,7 @@ const AboutIntro = () => {
         transition={{ duration: 0.8 }}
       >
         <div className="about-intro-img-wrapper">
-          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800" alt="Medical MedSpa Treatment" className="about-intro-img" />
+          <img src="/vixen/banners/massage-flower.jpg" alt="Medical MedSpa Treatment" className="about-intro-img" />
         </div>
       </motion.div>
       
@@ -29,13 +29,13 @@ const AboutIntro = () => {
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} 
           className="about-subtitle"
         >
-          WELCOME TO MEDSPA
+          WELCOME TO VIXEN SPA SERVICES
         </motion.span>
         <motion.p 
           variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} 
           className="about-intro-text"
         >
-          At MedSpa, we believe that true beauty and wellness come from within. 
+          At Vixen Spa Services, we believe that true beauty and wellness come from within. 
           Our luxurious sanctuary is designed to provide you with cutting-edge medical treatments in a deeply relaxing environment.
         </motion.p>
         <motion.p 

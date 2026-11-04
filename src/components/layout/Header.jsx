@@ -81,7 +81,7 @@ const Header = () => {
                   className="logo"
                 >
                   <Link to="/">
-                    <img src="/logo.png" alt="MedSpa Logo" className="header-logo-img" />
+                    <img src="/vixen-spa-logo.png" alt="Vixen Spa Services" className="header-logo-img" />
                   </Link>
                 </motion.div>
               )}
@@ -101,7 +101,7 @@ const Header = () => {
                   className="logo"
                 >
                   <Link to="/">
-                    <img src="/logo.png" alt="MedSpa Logo" className="header-logo-img" />
+                    <img src="/vixen-spa-logo.png" alt="Vixen Spa Services" className="header-logo-img" />
                   </Link>
                 </motion.div>
               ) : (
@@ -139,7 +139,7 @@ const Header = () => {
                                     {col.links.map(link => {
                                       const serviceId = link.path.split('/').pop();
                                       const sInfo = getServiceById(serviceId);
-                                      const image = sInfo?.image || 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=200&h=150';
+                                      const image = sInfo?.image || '/vixen/back-massage-relax.jpg';
                                       const desc = sInfo?.description || `Experience our specialized ${link.label.toLowerCase()} treatment.`;
                                       
                                       return (
@@ -192,7 +192,7 @@ const Header = () => {
           <div className="header-right">
             <div className="appointment-info">
               <span className="info-label">Appointment: </span>
-              <a href="tel:6022665755" className="phone-link">(602) 266-5755</a>
+              <a href="tel:+13238739014" className="phone-link">(323) 873-9014</a>
             </div>
             <Link to="/book-appointment" className="btn btn-outline header-book-btn">
               <span className="book-btn-text">Book Appointment</span>
@@ -247,9 +247,9 @@ const Header = () => {
               
               <div style={{ maxHeight: '60vh', overflowY: 'auto', padding: '2rem 2.5rem' }}>
                 {searchQuery.trim() === '' ? (
-                  <p style={{ color: 'var(--secondary-color)', textAlign: 'center', padding: '3rem 0', fontFamily: 'Melodrama, serif', fontSize: '1.8rem' }}>Discover your perfect treatment...</p>
+                  <p style={{ color: 'var(--secondary-color)', textAlign: 'center', padding: '3rem 0', fontFamily: 'var(--font-heading)', fontSize: '1.8rem' }}>Discover your perfect treatment...</p>
                 ) : searchResults.length === 0 ? (
-                  <p style={{ color: 'var(--secondary-color)', textAlign: 'center', padding: '3rem 0', fontFamily: 'Melodrama, serif', fontSize: '1.8rem' }}>No treatments found for "{searchQuery}".</p>
+                  <p style={{ color: 'var(--secondary-color)', textAlign: 'center', padding: '3rem 0', fontFamily: 'var(--font-heading)', fontSize: '1.8rem' }}>No treatments found for "{searchQuery}".</p>
                 ) : (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     {searchResults.map(result => (

@@ -16,7 +16,7 @@ const PricingHero = () => {
     <section className="about-hero-container">
       <div 
         className="about-hero-banner" 
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1920&h=1080')` }}
+        style={{ backgroundImage: `url('/vixen/banners/therapist-back-massage.jpg')` }}
       >
         <div className="about-hero-overlay"></div>
         <motion.h1 
@@ -45,7 +45,7 @@ const PricingHero = () => {
           <div className="vertical-line"></div>
           <p className="breadcrumbs">Home &gt; Pricing</p>
           <p className="about-hero-desc">
-            Discover our curated selection of premium treatments. All prices are starting estimates; a customized quote will be provided during your complimentary consultation.
+            Every recovery plan is personalized. Call or text (323) 873-9014 for pricing, or ask during your assessment.
           </p>
         </motion.div>
       </div>

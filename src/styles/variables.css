@@ -10,7 +10,8 @@
   --accent-color: #56C477;
 
   /* Fonts */
-  --font-primary: 'Jost', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif; /* Headings: clean, highly legible sans */
   
   /* Spacing */
   --spacing-xs: 0.25rem;

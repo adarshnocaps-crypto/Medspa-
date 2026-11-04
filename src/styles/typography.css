@@ -5,6 +5,13 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-heading) !important; /* one consistent heading font site-wide */
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.2;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--third-color);
   font-weight: 600;

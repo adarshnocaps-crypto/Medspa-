@@ -30,15 +30,15 @@ const TreatmentGallery = () => {
   return (
     <div className="treatment-gallery-page">
       <Helmet>
-        <title>{treatment.title} Gallery | MedSpa</title>
-        <meta name="description" content={`View before and after results and our gallery for ${treatment.title}.`} />
+        <title>{treatment.title} Gallery | Vixen Spa Services</title>
+        <meta name="description" content={`View the Vixen Spa Services gallery for ${treatment.title}.`} />
       </Helmet>
 
       {/* Hero Section */}
       <section className="treatment-gallery-hero">
         <div 
           className="tg-hero-banner"
-          style={{ backgroundImage: `url(${treatment.thumbnail})` }}
+          style={{ backgroundImage: `url(${treatment.heroImage || treatment.thumbnail})` }}
         >
           <div className="tg-hero-overlay"></div>
           <div className="tg-hero-content">
@@ -117,7 +117,7 @@ const TreatmentGallery = () => {
               Treatment Gallery
             </motion.h2>
             
-            <div className="tg-masonry-grid">
+            <div className={`tg-masonry-grid ${treatment.galleryImages.every(i => i.src.startsWith('/yelp/')) ? 'tg-masonry-grid--compact' : ''}`}>
               {treatment.galleryImages.map((img, index) => (
                 <motion.div 
                   className={`tg-masonry-item ${img.type}`} 
@@ -138,10 +138,10 @@ const TreatmentGallery = () => {
       {/* Booking CTA */}
       <section className="tg-cta-section">
         <div className="tg-container tg-cta-content">
-          <h2>Ready for your transformation?</h2>
-          <p>Book a consultation to discuss how we can achieve your aesthetic goals.</p>
+          <h2>Ready to start your recovery?</h2>
+          <p>Schedule an assessment and we'll plan your sessions around your procedure.</p>
           <Link to="/book-appointment" className="btn btn-primary" style={{ backgroundColor: 'var(--primary-color)', color: 'var(--body-bg-color)' }}>
-            Book Consultation
+            Schedule an Assessment
           </Link>
         </div>
       </section>

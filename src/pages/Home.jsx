@@ -8,7 +8,6 @@ import PartnersSection from '../components/sections/PartnersSection';
 import BookingSection from '../components/sections/BookingSection';
 import BlogSection from '../components/sections/BlogSection';
 import AboutFaq from '../components/sections/about/AboutFaq';
-import GallerySection from '../components/sections/GallerySection';
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
       <WhyChooseUsSection />
       <ScrollingTestimonials />
       <PartnersSection />
-      <GallerySection />
       <BookingSection />
       <div style={{ backgroundColor: '#f4f5f0' }}>
         <AboutFaq />

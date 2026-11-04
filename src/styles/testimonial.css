@@ -56,7 +56,7 @@
 }
 
 .testi-author-name {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 1.2rem;
   color: var(--body-bg-color);
   margin: 0 0 0.2rem 0;
@@ -94,7 +94,7 @@
 }
 
 .testi-text {
-  font-family: 'Melodrama', serif;
+  font-family: var(--font-heading);
   font-size: 2.2rem;
   line-height: 1.4;
   color: var(--body-bg-color);

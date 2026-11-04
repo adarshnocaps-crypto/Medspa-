@@ -26,7 +26,7 @@ const Testimonials = () => {
         <h1>What Our Clients Say</h1>
         <p className="reviews-intro">
           Real words from clients Priscilla has helped recover after liposuction, BBL and other cosmetic procedures,
-          as published on our website.
+          from our Yelp page and website.
         </p>
       </section>
 
@@ -45,10 +45,15 @@ const Testimonials = () => {
             </div>
             <p className="review-text">“{review.text}”</p>
             <div className="review-author">
-              <div className="review-initials" aria-hidden="true">{getInitials(review.name)}</div>
+              {review.avatar ? (
+                <img className="review-initials" src={review.avatar} alt={review.name} style={{ objectFit: 'cover' }} />
+              ) : (
+                <div className="review-initials" aria-hidden="true">{getInitials(review.name)}</div>
+              )}
               <div>
                 <h3 className="review-name">{review.name}</h3>
                 <p className="review-meta">{review.location} &middot; {review.service}</p>
+                <p className="review-meta">{review.source === 'Yelp' ? 'Reviewed on Yelp' : 'From our website'}{review.date ? ` \u00b7 ${review.date}` : ''}</p>
               </div>
             </div>
           </motion.article>

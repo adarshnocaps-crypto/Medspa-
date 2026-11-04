@@ -6,7 +6,7 @@ import { reviews as allReviews, WEBSITE_URL } from '../../data/reviews';
 import YelpPhotoStrip from './YelpPhotoStrip';
 import { yelpPhotos } from '../../data/yelpPhotos';
 
-const reviews = allReviews.map(r => ({ ...r, text: r.short }));
+const reviews = allReviews.slice(0, 7).map(r => ({ ...r, text: r.short }));
 
 // Real client testimonials from the business website (see data/reviews.js). Cards show the
 // client's initials because no client photos are published.
@@ -73,7 +73,7 @@ const ScrollingTestimonials = () => {
             What our <span>Happy Clients</span> <br/>reviewed about Us
           </motion.h2>
           <motion.p variants={childVariants} className="scroll-testi-desc">
-            Real words from clients Priscilla has helped recover after liposuction, BBL and other cosmetic procedures.
+            Real reviews from clients Priscilla has helped recover after surgery, from our Yelp page and website.
           </motion.p>
           <motion.div variants={childVariants} style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
             <Link to="/testimonials" className="btn btn-outline" style={{ display: 'inline-flex', gap: '10px' }}>
